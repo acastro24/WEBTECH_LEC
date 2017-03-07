@@ -1,0 +1,37 @@
+HTTP REQUEST METHOD
+> Standard Method
+	> Get 	- retrieving whatever information (in the form of an entity) is identified by the Request-URI.
+		- returns responses as entity
+		- commonly used
+		- Response is cacheable if and only if it meets the requirements for HTTP Caching
+	> Head	- identical to GET except that the server MUST NOT return a message-body in the response.
+		- Metainformation in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request.
+		- general purpose
+		- Often used to test the validity, accessibility and recent modification of hypertext links.
+		- may be cacheable.
+	> Post - Used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. 
+		- Its function is determined by the server and is usually dependent on the Request-URI.
+		- Responses are not cacheable (unless the response inclused Cache-Control or Expires header fields)
+	> Put - requests that the enclosed entity be stored under the supplied Request-URI.
+		* If there is an existing resource, the enclosed entity should considered to be a modified version in the origin server.
+		- Responses are not cacheable
+	> Delete - requests that the origin server delete the resource identified by the Request-URI. 
+		- May be overridden by human intervention on the origin server
+	> Option - represents a request for information about the communication options available on the request/response chain identified by the Request-URI
+		- asks the server what to do
+		- Responses are not cacheable
+	> Trace - used to invoke a remote, application-layer loop-back of the request message. 
+		- must not include an entity.
+		- allows the client to see what is being received at the other end of the request chain
+		- diagnostic purposes
+		- responses must not be cached
+	> Connect - use with a proxy that can dynamically switch to being a tunnel
+		-establish tunnel -> blind relay
+> Safe Method - the GET and HEAD methods SHOULD NOT have the significance of taking an action other than retrieval (method considered safe)
+		e.g GET, HEAD, OPTIONS, TRACE
+		- methods has no modification
+> Idempotent Method -  no concurrent operations are being executed on the same set of resources
+		e.g GET, HEAD, OPTIONS, TRACE, PUT, DELETE
+		-can be used several times
+> Cacheable Method - if the cache is allowed to store a copy of the response message
+		
