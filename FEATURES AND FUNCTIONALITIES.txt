@@ -1,0 +1,36 @@
+HTTP FEATURES AND FUNCTIONALITY
+> CACHE CONTROL - used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.
+	* HTTP/1.0 caches might not implement Cache-Control and might only implement Pragma: no-cache
+
+> CONTENT MEDIA TYPE (MIME) SPECIFICATION - HTTP uses Internet Media Types [17] in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.
+	*MIME - Multipurpose Internet Mail Extensions
+
+> LANGUAGE AND CHARSET SPECIFICATION - refer to a method used with one or more tables to convert a sequence of octets into a sequence of characters
+
+> CONTENT/ TRANSFER CODING
+	> Content Coding - used to allow a document to be compressed or otherwise usefully transformed without losing the identity of its underlying media type and without loss of information
+	> Transfer Coding - Transfer-coding values are used to indicate an encoding transformation that has been, can be, or may need to be applied to an entity-body in order to ensure "safe transport" through the network. 
+			- property of the message, not of the original entity.
+
+> CONTENT NEGOTIATION -  the process of selecting the best representation for a given response when there are multiple representations available.
+			- must agree on the client/server agreement first; Negotiation before sending
+	 Two kinds of content negotiation: server-driven and agent-driven negotiation. 
+		*These two kinds of negotiation are orthogonal and thus may be used separately or in combination. 
+
+> CLIENT-SERVER PROTOCOL - HTTP/1.1 server MAY assume that a HTTP/1.1 client intends to maintain a persistent connection unless a Connection header including the connection-token "close" was sent in the request.
+			- HTTP/1.1 client MAY expect a connection to remain open, but would decide to keep it open based on whether the response from a server contains a Connection header with the connection-token close.
+			- Clients and servers SHOULD NOT assume that a persistent connection is maintained for HTTP versions less than 1.1 unless it is explicitly signaled.
+			- In order to remain persistent, all messages on the connection MUST have a self-defined message length
+
+> PERSISTENT CONNECTION - provides a mechanism by which a client and a server can signal the close of a TCP connection.
+	STAGES:
+		Connection -> Request -> Disconnection
+	*1.0 = nonpersistent
+	*1.1 = connection can be used in multiple connections
+
+> REQUEST PIPELINING - A client that supports persistent connections MAY "pipeline" its requests
+			- A server MUST send its responses to those requests in the same order that the requests were received.
+			- Clients SHOULD NOT pipeline requests using non-idempotent methods or non-idempotent sequences of methods
+			- To make everything/ anything fast
+
+> AUTHENTICATION/ AUTHORIZATION -  HTTP provides several OPTIONAL challenge-response authentication mechanisms which can be used by a server to challenge a client request and by a client to provide authentication information. 
