@@ -1,0 +1,42 @@
+REQUEST MESSAGE
+> REQUEST LINE - begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF where the elements are separated by SP characters
+		  Request-Line   = Method SP Request-URI SP HTTP-Version CRLF
+	> Method - indicates the method to be performed on the resource identified by the Request-URI.
+		- Case Sensitive
+	> Request-URI - a Uniform Resource Identifier and identifies the resource upon which to apply the request.
+		 Request-URI    = "*" | absoluteURI | abs_path | authority
+			* four options for Request-URI are dependent on the nature of the request. 
+			* asterisk "*" - the request does not apply to a particular resource, but to the server itself 
+					- only allowed if method used does not necessarily apply to a resource
+			* absoluteURI - required when the request is being made to a proxy.
+			* authority (network connection of the URI) - CONNECT method can only be used by this form
+	> HTTP Protocol - a request/response protocol.
+		* Client send a request  in the form of a request method, URI, and protocol version, followed by a MIME-like message. The server responds with a status line, including the message's protocol version and a success or error code, followed by a MIME-like message
+		Situation 1: HTTP communication is initiated by a user agent and consists of a request to be applied to a resource on some origin server	
+			request chain ------------------------> UA -------------------v------------------- O <----------------------- response chain
+				
+		Situation 2: one or more intermediaries are present in the request/response chain
+			   request chain --------------------------------------> UA -----v----- A -----v----- B -----v----- C -----v----- O <------------------------------------- response chain
+
+				Legend:
+				    UA - User Agent
+				    O - Origin Server
+				    A, B, C - intermediaries
+
+
+		Three common forms of intermediary: proxy, gateway, and tunnel. 
+			> Proxy - forwarding agent, receiving requests, rewriting messages, and forwarding the reformatted request toward the server identified by the URI. 
+			> Gateway - receiving agent, acting as a layer above some other server(s) and, translating the requests to the underlying server's
+   protocol (if neccessay).
+			> Tunnel - acts as a relay point between two connections without changing the messages.
+			 	 - tunnels are used when the communication needs to pass through an intermediary even when the intermediary cannot understand the contents of the messages.
+
+> MESSAGE HEADER - includes GENERAL, REQUEST, RESPONSE, and ENTITY HEADERS 
+	> General - can be used by clients and servers
+	> Request - can be used by clients
+	> Response - can be used by servers
+	> Entity - Entity-header fields define metainformation about the entity-body or about the resource identified by the request
+	*One header is required in HTML 1.1
+
+> EMPTY LINE - indicates the end of the header fields, and possibly a message-body.
+> MESSAGE BODY (payload)- used to carry the entity-body associated with the request or response. The message-body differs from the entity-body only when a transfer-coding has been applied.
