@@ -1,0 +1,67 @@
+@font-face{
+	font-family: webF;
+	src: url(questrial-regular-webfont.woff)format("woff");
+}
+html, body{
+	font-family: webF;
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	background-color: #F2EDD8;
+}
+.containerh{
+	margin: 0;
+	padding: 0;
+}
+header  {
+	text-align: center;
+	background-color: #7B8D8E;
+	color:white;
+	width: 100%;
+	padding-left:10px;
+	padding-right: 60px;
+	padding-top: 1px;
+	position: fixed;
+}
+li {
+	display: inline;
+	margin-right:20px;
+	font-size: 20px;
+	list-style: none;
+}
+nav ul{
+	list-style: none;
+}
+h1 {
+	float:left;
+}
+nav {
+	float:right;
+}
+h2 {
+	vertical-align: middle;
+	height: 40px;
+	text-indent: 20px;
+	background-color: #44B3C2;
+	color: white;
+	font-size: 30px;
+}
+h2:hover{
+	color: white;
+}
+#mainbody {
+	margin-top: 0px;
+}
+#topic1 {
+	padding-top: 70px;
+}
+#topic1items{
+	display:none;
+}
+#topic2items{
+	display:none;
+}
+#topic3items{
+	display:none;
+}

@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>WebTech Lecture Notes</title>
+	<title>Web Development and Technologies Lecture Notes</title>
+	<meta charset="utf-8">
+    <meta name="Description" content="A portfolio of Adrian Aspiras">
+    <meta name="author" content="Adrian Aspiras">
+    <meta name="Keywords" content="Adrian Aspiras, Portfolio, SLU, SCIS, School of Computing and Information Sciences, Saint Louis University PH">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
 </head>
 <body>
 	<header>
 			<div class="containerh">
 				<h1>Web Development and Technologies</h1>
-				<ul>
-					<li><a href="index.html">Prelims</a></li>
-					<li><a href="midterms.html">Midterms</a></li>
-					<li><a href="finals.html">Finals</a></li>
-				</ul>
+				<nav>	
+					<ul>
+						<li><a href="index.html" class="linkin">Prelims</a></li>
+						<li><a href="midterms.html" class="linkin">Midterms</a></li>
+						<li><a href="finals.html" class="linkin">Finals</a></li>
+					</ul>
+				</nav>
 			</div>
 	</header>
 	<div id="mainbody">
-		<div class="topic1">
-			<h2 class="topictitle">HTTP FEATURES AND FUNCTIONALITY</h2>
+		<div id="topic1">
+			 
+			<h2 class="topictitle" onclick="toggleTopic1()">HTTP FEATURES AND FUNCTIONALITY</h2>
+			<div id="topic1items">
 				<div class="item">
 					<h3 class="itemtitle">CACHE CONTROL</h3>
 					<div class="itemdetails">
@@ -33,7 +43,7 @@
 					<div class="itemdetails">refer to a method used with one or more tables to convert a sequence of octets into a sequence of characters</div>
 				</div>
 				<div class="item">
-					<h3 class="itemtitle">CONTENT/ TRANSFER CODING</h3>
+					<h3 class="itemtitle" onclick="toggleItem()">CONTENT/ TRANSFER CODING</h3>
 					<div class="itemdetails">
 						<div class="subdetails">
 							<h4>Content Coding</h4>
@@ -75,7 +85,6 @@
 							- In order to remain persistent, all messages on the connection MUST have a self-defined message length
 						</p>
 					</div>
-					<div class="extranote"><p><span class="noot">Note:</span></p></div>
 				</div>
 				<div class="item">
 					<h3 class="itemtitle">PERSISTENT CONNECTION</h3>
@@ -114,11 +123,12 @@
 							- HTTP provides several OPTIONAL challenge-response authentication mechanisms which can be used by a server to challenge a client request and by a client to provide authentication information.
 						</p>
 					</div>
-					<div class="extranote"><p><span class="noot">Note:</span></p></div>
 				</div>
 		</div>
-		<div class="topic2">
-			<h2 class="topictitle">HTTP RESOURCE ADDRESSING</h2>
+		</div>
+		<div id="topic2">
+			<h2 class="topictitle" onclick="toggleTopic2()">HTTP RESOURCE ADDRESSING</h2>
+			<div id="topic2items">
 				<div class="item">
 						<h3 class="itemtitle">URI (Uniform Resource Identifier</h3>
 						<div class="itemdetails">
@@ -146,9 +156,184 @@
 							<ul>
 								<li>Scheme (http/https/FTP/File) is the first word you see in a url</li>
 								<li>Authority that has user information or host name of the machine which is resolved to an IP address using DNS(Descriptive Naming System)</li>
+								<li>
+									Port number is by default set to 80 for HTTP and 40 for HTTPS
+								</li>
+								<li>
+									Path to Resource is dynamic or static. For example /info/profile.php?
+								</li>
+								<li>
+									Query Value (?) : key=value, (&) : where, (%) : if same
+								</li>
 							</ul>
 						</div>
-						<div class="extranote"><p><span class="noot">Note:</span></p></div>
+						
+					</div>
+					<div class="item">
+						<h3 class="itemtitle">URL Writing</h3>
+						<div class="itemdetails">
+							<p>
+								Fragment Identifier (#) is also known as bookmarks for example a div element with an id="a"then in the URL we type: index.html#a
+							</p>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div id="topic3">
+			<h2 class="topictitle" onclick="toggleTopic3()">REQUEST MESSAGE</h2>
+			<div id="topic3items">
+				<div class="item">
+						<h3 class="itemtitle">REQUEST LINE</h3>
+						<div class="itemdetails">
+							<p>
+								- begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF where the elements are separated by SP characters
+							</p>
+							<p>
+								Request-Line = Method SP Request-URI SP HTTP-Version CRLF
+							</p>
+							<div class="subdetails">
+							<h4>Method</h4>
+								<p>
+									indicates the method to be performed on the resource identified by the Request-URI.
+								</p>
+								<p>
+									- Case Sensitive
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>Request-URI</h4>
+								<p>
+									a Uniform Resource Identifier and identifies the resource upon which to apply the request.
+								</p>
+								<p>
+									Request-URI = "*" | absoluteURI | abs_path | authority
+								</p>
+								<p>
+									* four options for Request-URI are dependent on the nature of the request.
+								</p>
+								<p>
+									* asterisk "*" - the request does not apply to a particular resource, but to the server itself
+								</p>
+								<p>
+									- only allowed if method used does not necessarily apply to a resource
+								</p>
+								<p>
+									* absoluteURI - required when the request is being made to a proxy.
+								</p>
+								<p>
+									* authority (network connection of the URI) - CONNECT method can only be used by this form
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<h3 class="itemtitle">HTTP Protocol</h3>
+						<div class="itemdetails">
+							<p>
+								- a request/response protocol
+							</p>
+							<p>
+								* Client send a request in the form of a request method, URI, and protocol version, followed by a MIME-like message. The server responds with a status line, including the message's protocol version and a success or error code, followed by a MIME-like message
+							</p>
+							<div class="subdetails">
+								<h4> Situation 1: </h4>
+								<p>
+									HTTP communication is initiated by a user agent and consists of a request to be applied to a resource on some origin server
+								</p>
+								<p>
+									request chain ------------------------&#62; UA -------------------v------------------- O &#60;----------------------- response chain
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>Situation 2:</h4>
+								<p>
+									one or more intermediaries are present in the request/response chain
+								</p>
+								<p>
+									request chain --------------------------------------&#62; UA -----v----- A -----v----- B -----v----- C -----v----- O &#60;------------------------------------- response chain
+								</p>
+								<p>
+									<span id="ultitle">Legend:</span>
+								</p>
+										<ul>
+											<li>UA - User Agent</li>
+											<li>O - Origin Server</li>
+											<li>A, B, C - intermediaries</li>
+										</ul>
+							</div>
+							<div class="subdetails">
+								<h4>Proxy</h4>
+								<p>
+									- one or more intermediaries are present in the request/response chain
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>Gateway</h4>
+								<p>
+									- receiving agent, acting as a layer above some other server(s) and, translating the requests to the underlying server's
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>Tunnel</h4>
+								<p>
+									- acts as a relay point between two connections without changing the messages.
+								</p>
+								<p>
+									- tunnels are used when the communication needs to pass through an intermediary even when the intermediary cannot understand the contents of the messages.
+								</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="item">
+						<h3 class="itemtitle">MESSAGE HEADER</h3>
+						<div class="itemdetails">
+							<p>
+								- includes GENERAL, REQUEST, RESPONSE, and ENTITY HEADERS
+							</p>
+							<div class="subdetails">
+								<h4>General</h4>
+								<p>
+									- can be used by clients and servers
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>Request</h4>
+								<p>
+									- can be used by clients
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>Response</h4>
+								<p>
+									- can be used by servers
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>Entity</h4>
+								<p>
+									- Entity-header fields define metainformation about the entity-body or about the resource identified by the request
+								</p>
+							</div>
+
+						</div>
+						<div class="extranote"><p><span class="noot">Note:</span> One header is required in HTML 1.1</p></div>
+					</div>
+					<div class="item">
+						<h3 class="itemtitle">EMPTY LINE</h3>
+						<div class="itemdetails">
+							<p>
+								- indicates the end of the header fields, and possibly a message-body.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<h3 class="itemtitle">MESSAGE BODY (payload)</h3>
+						<div class="itemdetails">
+							<p>
+								- used to carry the entity-body associated with the request or response. The message-body differs from the entity-body only when a transfer-coding has been applied.
+							</p>
+						</div>
 					</div>
 					<div class="item">
 						<h3 class="itemtitle"></h3>
@@ -171,6 +356,11 @@
 						</div>
 						<div class="extranote"><p><span class="noot">Note:</span></p></div>
 					</div>
+				</div>
+		</div>
+		<div id="topic4">
+			<h2 class="topictitle">HTTP REQUEST METHOD</h2>
+
 		</div>
 		
 	</div>
@@ -179,5 +369,57 @@
 
 		</div>
 	</footer>
+
+	<script>
+		function toggleTopic1() {
+    		var x = document.getElementById("topic1items");
+			    if (x.style.display === 'none') {
+			        x.style.display = 'block';
+			    } else {
+			        x.style.display = 'none';
+			    }
+		}
+		function toggleTopic2() {
+    		var x = document.getElementById("topic2items");
+			    if (x.style.display === 'none') {
+			        x.style.display = 'block';
+			    } else {
+			        x.style.display = 'none';
+			    }
+		}
+		function toggleTopic3() {
+    		var x = document.getElementById("topic3items");
+			    if (x.style.display === 'none') {
+			        x.style.display = 'block';
+			    } else {
+			        x.style.display = 'none';
+			    }
+		}
+		function toggleTopic4() {
+    		var x = document.getElementById("topic4items");
+			    if (x.style.display === 'none') {
+			        x.style.display = 'block';
+			    } else {
+			        x.style.display = 'none';
+			    }
+		}
+		function toggleTopic5() {
+    		var x = document.getElementById("topic5items");
+			    if (x.style.display === 'none') {
+			        x.style.display = 'block';
+			    } else {
+			        x.style.display = 'none';
+			    }
+		}
+		function toggleItem() {
+    		var x = document.getElementsByClassNames("itemdetails");
+			    if (x.style.display === 'none') {
+			        x.style.display = 'block';
+			    } else {
+			        x.style.display = 'none';
+			    }
+		}
+	</script>
+	
 </body>
 </html>
