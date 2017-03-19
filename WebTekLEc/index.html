@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WebTech Lecture Notes</title>
+</head>
+<body>
+	<header>
+			<div class="containerh">
+				<h1>Web Development and Technologies</h1>
+				<ul>
+					<li><a href="index.html">Prelims</a></li>
+					<li><a href="midterms.html">Midterms</a></li>
+					<li><a href="finals.html">Finals</a></li>
+				</ul>
+			</div>
+	</header>
+	<div id="mainbody">
+		<div class="topic1">
+			<h2 class="topictitle">HTTP FEATURES AND FUNCTIONALITY</h2>
+				<div class="item">
+					<h3 class="itemtitle">CACHE CONTROL</h3>
+					<div class="itemdetails">
+					<p>- used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.</p></div>
+					<div class="extranote"><p><span class="noot">Note:</span>HTTP/1.0 caches might not implement Cache-Control and might only implement Pragma: no-cache</p></div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">CONTENT MEDIA TYPE (MIME) SPECIFICATION</h3>
+					<div class="itemdetails">HTTP uses Internet Media Types [17] in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.</div>
+					<div class="extranote"><p><span class="noot">Note:</span>MIME - Multipurpose Internet Mail Extensions</p></div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">LANGUAGE AND CHARSET SPECIFICATION</h3>
+					<div class="itemdetails">refer to a method used with one or more tables to convert a sequence of octets into a sequence of characters</div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">CONTENT/ TRANSFER CODING</h3>
+					<div class="itemdetails">
+						<div class="subdetails">
+							<h4>Content Coding</h4>
+							<p>used to allow a document to be compressed or otherwise usefully transformed without losing the identity of its underlying media type and without loss of information</p>
+						</div>
+						<div class="subdetails">
+							<h4>Transfer Coding</h4>
+							<p>	- Transfer-coding values are used to indicate an encoding transformation that has been, can be, or may need to be applied to an entity-body in order to ensure "safe transport" through the network.
+							</p>
+							<p>
+								-property of the message, not of the original entity.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">CONTENT NEGOTIATION</h3>
+					<div class="itemdetails">
+						<p>
+							- the process of selecting the best representation for a given response when there are multiple representations available.
+						</p>
+						<p>
+							- must agree on the client/server agreement first; Negotiation before sending
+						</p>
+						<p>
+							 Two kinds of content negotiation: server-driven and agent-driven negotiation.
+						</p>
+					</div>
+					<div class="extranote"><p><span class="noot">Note:</span>These two kinds of negotiation are orthogonal and thus may be used separately or in combination.</p></div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">CLIENT-SERVER PROTOCOL</h3>
+					<div class="itemdetails">
+						<p>- HTTP/1.1 server MAY assume that a HTTP/1.1 client intends to maintain a persistent connection unless a Connection header including the connection-token "close" was sent in the request.</p>
+						<p>
+							- HTTP/1.1 client MAY expect a connection to remain open, but would decide to keep it open based on whether the response from a server contains a Connection header with the connection-token close.
+						</p>
+						<p>
+							- In order to remain persistent, all messages on the connection MUST have a self-defined message length
+						</p>
+					</div>
+					<div class="extranote"><p><span class="noot">Note:</span></p></div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">PERSISTENT CONNECTION</h3>
+					<div class="itemdetails">
+						<p>
+							- provides a mechanism by which a client and a server can signal the close of a TCP connection.
+						</p>
+						<p>
+							STAGES: <br>
+							Connection -> Request -> Disconnection
+						</p>
+					</div>
+					<div class="extranote"><p><span class="noot">Note:</span>HTTP 1.0 = nonpersistent | HTTP 1.1 = connection can be used in multiple connections</p></div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">REQUEST PIPELINING</h3>
+					<div class="itemdetails">
+						<p>
+							-A client that supports persistent connections MAY "pipeline" its requests
+						</p>
+						<p>
+							- A server MUST send its responses to those requests in the same order that the requests were received.
+						</p>
+						<p>
+							- Clients SHOULD NOT pipeline requests using non-idempotent methods or non-idempotent sequences of methods
+						</p>
+						<p>
+							- To make everything/ anything fast
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<h3 class="itemtitle">AUTHENTICATION/ AUTHORIZATION</h3>
+					<div class="itemdetails">
+						<p>
+							- HTTP provides several OPTIONAL challenge-response authentication mechanisms which can be used by a server to challenge a client request and by a client to provide authentication information.
+						</p>
+					</div>
+					<div class="extranote"><p><span class="noot">Note:</span></p></div>
+				</div>
+		</div>
+		<div class="topic2">
+			<h2 class="topictitle">HTTP RESOURCE ADDRESSING</h2>
+				<div class="item">
+						<h3 class="itemtitle">URI (Uniform Resource Identifier</h3>
+						<div class="itemdetails">
+							<p>
+								it is the common point in referencing a network based resource. It has two types:
+							</p>
+							<div class="subdetails">
+								<h4>URN (Uniform Resource Name)</h4>
+								<p>
+									is in the form “urn:.” urn is mostly used when the resource is in the directory that you specified and that it is not moved somewhere else, then you specify the name of the resource that you intended.
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4>URL(Uniform Resource Locator</h4>
+								<p>
+									is in the form “http://.. or https://”is your typical web address that points to a specific location that you want to.
+								</p>
+							</div>
+						</div>
+						<div class="extranote"><p><span class="noot">Note:</span></p></div>
+					</div>
+					<div class="item">
+						<h3 class="itemtitle">HTTP URL COMPONENTS</h3>
+						<div class="itemdetails">
+							<ul>
+								<li>Scheme (http/https/FTP/File) is the first word you see in a url</li>
+								<li>Authority that has user information or host name of the machine which is resolved to an IP address using DNS(Descriptive Naming System)</li>
+							</ul>
+						</div>
+						<div class="extranote"><p><span class="noot">Note:</span></p></div>
+					</div>
+					<div class="item">
+						<h3 class="itemtitle"></h3>
+						<div class="itemdetails">
+							<p>
+								
+							</p>
+							<div class="subdetails">
+								<h4></h4>
+								<p>
+									
+								</p>
+							</div>
+							<div class="subdetails">
+								<h4></h4>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+						<div class="extranote"><p><span class="noot">Note:</span></p></div>
+					</div>
+		</div>
+		
+	</div>
+	<footer>
+		<div class="contianerf">
+
+		</div>
+	</footer>
+</body>
+</html>
