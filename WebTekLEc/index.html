@@ -11,13 +11,13 @@
 </head>
 <body>
 	<header>
-			<div class="containerh">
+			<div id="containerh">
 				<h1>Web Development and Technologies</h1>
 				<nav>	
 					<ul>
-						<li><a href="index.html" class="linkin">Prelims</a></li>
-						<li><a href="midterms.html" class="linkin">Midterms</a></li>
-						<li><a href="finals.html" class="linkin">Finals</a></li>
+						<li><a href="index.html" class="linkin">Prelims</a> | </li>
+						<li><a href="midterms.html" class="linkin">Midterms</a> | </li>
+						<li><a href="finals.html" class="linkin">Finals</a> | </li>
 					</ul>
 				</nav>
 			</div>
@@ -28,26 +28,26 @@
 			<h2 class="topictitle" onclick="toggleTopic1()">HTTP FEATURES AND FUNCTIONALITY</h2>
 			<div id="topic1items">
 				<div class="item">
-					<h3 class="itemtitle">CACHE CONTROL</h3>
+					<h3 class="itemtitle" onclick="toggleItem()">CACHE CONTROL</h3>
 					<div class="itemdetails">
 					<p>- used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.</p></div>
 					<div class="extranote"><p><span class="noot">Note:</span>HTTP/1.0 caches might not implement Cache-Control and might only implement Pragma: no-cache</p></div>
 				</div>
 				<div class="item">
 					<h3 class="itemtitle">CONTENT MEDIA TYPE (MIME) SPECIFICATION</h3>
-					<div class="itemdetails">HTTP uses Internet Media Types [17] in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.</div>
+					<div class="itemdetails"><p>- HTTP uses Internet Media Types [17] in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.</p></div>
 					<div class="extranote"><p><span class="noot">Note:</span>MIME - Multipurpose Internet Mail Extensions</p></div>
 				</div>
 				<div class="item">
 					<h3 class="itemtitle">LANGUAGE AND CHARSET SPECIFICATION</h3>
-					<div class="itemdetails">refer to a method used with one or more tables to convert a sequence of octets into a sequence of characters</div>
+					<div class="itemdetails"><p>- refer to a method used with one or more tables to convert a sequence of octets into a sequence of characters</p></div>
 				</div>
 				<div class="item">
-					<h3 class="itemtitle" onclick="toggleItem()">CONTENT/ TRANSFER CODING</h3>
+					<h3 class="itemtitle">CONTENT/ TRANSFER CODING</h3>
 					<div class="itemdetails">
 						<div class="subdetails">
 							<h4>Content Coding</h4>
-							<p>used to allow a document to be compressed or otherwise usefully transformed without losing the identity of its underlying media type and without loss of information</p>
+							<p>- used to allow a document to be compressed or otherwise usefully transformed without losing the identity of its underlying media type and without loss of information</p>
 						</div>
 						<div class="subdetails">
 							<h4>Transfer Coding</h4>
@@ -412,7 +412,7 @@
 			    }
 		}
 		function toggleItem() {
-    		var x = document.getElementsByClassNames("itemdetails");
+    		var x = document.getElementByClassNames("itemdetails");
 			    if (x.style.display === 'none') {
 			        x.style.display = 'block';
 			    } else {

@@ -7,20 +7,17 @@ html, body{
 	height: 100%;
 	width: 100%;
 	margin:0;
-	padding: 0;
+	padding:0;
 	background-color: #F2EDD8;
 }
-.containerh{
-	margin: 0;
-	padding: 0;
-}
+
 header  {
 	text-align: center;
 	background-color: #7B8D8E;
 	color:white;
 	width: 100%;
-	padding-left:10px;
-	padding-right: 60px;
+	padding-right: 20px;
+	padding-left: 20px;
 	padding-top: 1px;
 	position: fixed;
 }
@@ -30,16 +27,26 @@ li {
 	font-size: 20px;
 	list-style: none;
 }
+li a {
+	text-decoration: none;
+	color:white;
+}
+li a:hover {
+	text-decoration: underline;
+	color:white;
+	font-size: 50px;
+}
 nav ul{
 	list-style: none;
 }
 h1 {
-	float:left;
+	text-align:center;
 }
-nav {
-	float:right;
+header nav {
+	text-align:center;
 }
 h2 {
+	padding-top:10px;
 	vertical-align: middle;
 	height: 40px;
 	text-indent: 20px;
@@ -54,10 +61,13 @@ h2:hover{
 	margin-top: 0px;
 }
 #topic1 {
-	padding-top: 70px;
+	padding-top: 100px;
 }
 #topic1items{
 	display:none;
+}
+#topic1items *{
+	padding-left: 50px;
 }
 #topic2items{
 	display:none;
@@ -65,3 +75,24 @@ h2:hover{
 #topic3items{
 	display:none;
 }
+.itemdetails {
+	padding-left: 100px;
+}
+.subdetails {
+	padding-left: 100px;
+}
+.subdetails p{
+	padding-left: 100px;
+}
+.itemtitle{
+	padding-top:10px;
+	vertical-align: middle;
+	height: 30px;
+	text-indent: 20px;
+	background-color: #E45641;
+	color: white;
+	font-size: 20px;
+}
+
+
+
