@@ -20,21 +20,22 @@ header  {
 	padding-left: 20px;
 	padding-top: 1px;
 	position: fixed;
+	box-shadow: -10px 2px 20px 2px gray;
 }
-li {
+nav li {
 	display: inline;
-	margin-right:20px;
+	margin-right:50px;
 	font-size: 20px;
 	list-style: none;
 }
-li a {
+nav li a {
 	text-decoration: none;
 	color:white;
 }
-li a:hover {
+nav li a:hover {
 	text-decoration: underline;
-	color:white;
-	font-size: 50px;
+	color:black;
+	font-size: 30px;
 }
 nav ul{
 	list-style: none;
@@ -50,40 +51,48 @@ h2 {
 	vertical-align: middle;
 	height: 40px;
 	text-indent: 20px;
-	background-color: #44B3C2;
+	background-color: #5D4C46;
 	color: white;
 	font-size: 30px;
 }
 h2:hover{
+	/*background-color: #55c4c3;*/
+	background-color: #44B3C2;
 	color: white;
+	box-shadow: 0px 1px 20px 1px gray;
+}
+h4 {
+
 }
 #mainbody {
 	margin-top: 0px;
 }
-#topic1 {
-	padding-top: 100px;
-}
-#topic1items{
-	display:none;
+#topic0 {
+	padding-top: 130px;
 }
 #topic1items *{
 	padding-left: 50px;
 }
-#topic2items{
-	display:none;
-}
-#topic3items{
-	display:none;
-}
+
 .itemdetails {
-	padding-left: 100px;
+	padding-left: 80px;
 }
 .subdetails {
-	padding-left: 100px;
+	margin-left: 80px;
 }
-.subdetails p{
-	padding-left: 100px;
+.subdetails + p{
+	left: 100px;
 }
+p.descp {
+	margin-left: 100px;
+}
+p.descp:nth-child(2), p.descp:nth-child(3) {
+	margin-left: 120px;
+}
+p.descp:nth-child(3){
+	margin-right: 100px;
+}
+
 .itemtitle{
 	padding-top:10px;
 	vertical-align: middle;
@@ -93,6 +102,18 @@ h2:hover{
 	color: white;
 	font-size: 20px;
 }
-
-
-
+.itemtitle:hover {
+	box-shadow: 0px 1px 20px 1px gray;
+}
+.subdetails ul li {
+	line-height: 30px;
+}
+footer {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+	background-color: #7B8D8E;
+	box-shadow: -10px 2px 20px 2px gray;
+}
