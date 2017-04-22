@@ -31,7 +31,7 @@
                 <h2 class="topictitle" onclick="toggleTopic0()">Introduction to the Wordl Wide Web</h2>
                 <div id="topic0items">
                     <div class="item">
-                        <h3 class="itemtitle">INTERNET</h3>
+                        <h3 class="itemtitle" onclick="toggleDet(0)">INTERNET</h3>
                         <div class="itemdetails">
                             <ul>
                                 <li>Came from the word “Internetwork” or “Internetworking” where network means interconnection of two devices</li>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <h3 class="itemtitle">3	things to consider:</h3>
+                        <h3 class="itemtitle" onclick="toggleDet(1)">3  things to consider:</h3>
                         <div class="itemdetails">
                             <div class="subdetails">
                                 <h4>Nodes = “Computers”</h4>
@@ -56,7 +56,7 @@
                             <div class="subdetails">
                                 <h4>Protocols/ Standards</h4>
                                 <p>
-                                    - -	Communication standard being controlled
+                                    - - Communication standard being controlled
                                 </p>
                                 <ul>
                                     <li>Linked together by unique addresses based on IP</li>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <h3 class="itemtitle">WWW (World Wide Web)</h3>
+                        <h3 class="itemtitle" onclick="toggleDet(2)">WWW (World Wide Web)</h3>
                         <div class="itemdetails">
                             <div class="subdetails">
                                 <h4>An information system</h4>
@@ -99,31 +99,31 @@
             <h2 class="topictitle" onclick="toggleTopic1()">HTTP FEATURES AND FUNCTIONALITY</h2>
             <div id="topic1items">
                 <div class="item">
-                    <h3 class="itemtitle">CACHE CONTROL</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(3)">CACHE CONTROL</h3>
                     <div class="itemdetails">
                         <p>- used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.</p>
-                    </div>
-                    <div class="extranote">
+                        <div class="extranote">
                         <p><span class="noot">Note:</span>HTTP/1.0 caches might not implement Cache-Control and might only implement Pragma: no-cache</p>
                     </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">CONTENT MEDIA TYPE (MIME) SPECIFICATION</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(4)">CONTENT MEDIA TYPE (MIME) SPECIFICATION</h3>
                     <div class="itemdetails">
                         <p>- HTTP uses Internet Media Types [17] in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.</p>
-                    </div>
-                    <div class="extranote">
-                        <p><span class="noot">Note:</span>MIME - Multipurpose Internet Mail Extensions</p>
+                        <div class="extranote">
+                            <p><span class="noot">Note:</span>MIME - Multipurpose Internet Mail Extensions</p>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">LANGUAGE AND CHARSET SPECIFICATION</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(5)">LANGUAGE AND CHARSET SPECIFICATION</h3>
                     <div class="itemdetails">
                         <p>- refer to a method used with one or more tables to convert a sequence of octets into a sequence of characters</p>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">CONTENT/ TRANSFER CODING</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(6)">CONTENT/ TRANSFER CODING</h3>
                     <div class="itemdetails">
                         <div class="subdetails">
                             <h4>Content Coding</h4>
@@ -131,7 +131,7 @@
                         </div>
                         <div class="subdetails">
                             <h4>Transfer Coding</h4>
-                            <p>	- Transfer-coding values are used to indicate an encoding transformation that has been, can be, or may need to be applied to an entity-body in order to ensure "safe transport" through the network.
+                            <p> - Transfer-coding values are used to indicate an encoding transformation that has been, can be, or may need to be applied to an entity-body in order to ensure "safe transport" through the network.
                             </p>
                             <p>
                                 -property of the message, not of the original entity.
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">CONTENT NEGOTIATION</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(7)">CONTENT NEGOTIATION</h3>
                     <div class="itemdetails">
                         <p>
                             - the process of selecting the best representation for a given response when there are multiple representations available.
@@ -151,13 +151,13 @@
                         <p>
                             Two kinds of content negotiation: server-driven and agent-driven negotiation.
                         </p>
-                    </div>
-                    <div class="extranote">
-                        <p><span class="noot">Note:</span>These two kinds of negotiation are orthogonal and thus may be used separately or in combination.</p>
+                        <div class="extranote">
+                            <p><span class="noot">Note:</span>These two kinds of negotiation are orthogonal and thus may be used separately or in combination.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">CLIENT-SERVER PROTOCOL</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(8)">CLIENT-SERVER PROTOCOL</h3>
                     <div class="itemdetails">
                         <p>- HTTP/1.1 server MAY assume that a HTTP/1.1 client intends to maintain a persistent connection unless a Connection header including the connection-token "close" was sent in the request.</p>
                         <p>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">PERSISTENT CONNECTION</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(9)">PERSISTENT CONNECTION</h3>
                     <div class="itemdetails">
                         <p>
                             - provides a mechanism by which a client and a server can signal the close of a TCP connection.
@@ -178,13 +178,13 @@
                             STAGES: <br>
                             Connection -> Request -> Disconnection
                         </p>
-                    </div>
-                    <div class="extranote">
-                        <p><span class="noot">Note:</span>HTTP 1.0 = nonpersistent | HTTP 1.1 = connection can be used in multiple connections</p>
+                        <div class="extranote">
+                            <p><span class="noot">Note:</span>HTTP 1.0 = nonpersistent | HTTP 1.1 = connection can be used in multiple connections</p>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">REQUEST PIPELINING</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(10)">REQUEST PIPELINING</h3>
                     <div class="itemdetails">
                         <p>
                             -A client that supports persistent connections MAY "pipeline" its requests
@@ -201,7 +201,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">AUTHENTICATION/ AUTHORIZATION</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(11)">AUTHENTICATION/ AUTHORIZATION</h3>
                     <div class="itemdetails">
                         <p>
                             - HTTP provides several OPTIONAL challenge-response authentication mechanisms which can be used by a server to challenge a client request and by a client to provide authentication information.
@@ -214,7 +214,7 @@
             <h2 class="topictitle" onclick="toggleTopic2()">HTTP RESOURCE ADDRESSING</h2>
             <div id="topic2items">
                 <div class="item">
-                    <h3 class="itemtitle">URI (Uniform Resource Identifier)</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(12)">URI (Uniform Resource Identifier)</h3>
                     <div class="itemdetails">
                         <p>
                             - it is the common point in referencing a network based resource. It has two types:
@@ -234,7 +234,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">HTTP URL COMPONENTS</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(13)">HTTP URL COMPONENTS</h3>
                     <div class="itemdetails">
                         <ul>
                             <li>Scheme (http/https/FTP/File) is the first word you see in a url</li>
@@ -252,7 +252,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">URL Writing</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(14)">URL Writing</h3>
                     <div class="itemdetails">
                         <p>
                             Fragment Identifier (#) is also known as bookmarks for example a div element with an id="a"then in the URL we type: index.html#a
@@ -265,7 +265,7 @@
             <h2 class="topictitle" onclick="toggleTopic3()">REQUEST MESSAGE</h2>
             <div id="topic3items">
                 <div class="item">
-                    <h3 class="itemtitle">REQUEST LINE</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(15)">REQUEST LINE</h3>
                     <div class="itemdetails">
                         <p>
                             - begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF where the elements are separated by SP characters
@@ -309,7 +309,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">HTTP Protocol</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(16)">HTTP Protocol</h3>
                     <div class="itemdetails">
                         <p>
                             - a request/response protocol
@@ -367,7 +367,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">MESSAGE HEADER</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(17)">MESSAGE HEADER</h3>
                     <div class="itemdetails">
                         <p>
                             - includes GENERAL, REQUEST, RESPONSE, and ENTITY HEADERS
@@ -396,13 +396,13 @@
                                 - Entity-header fields define metainformation about the entity-body or about the resource identified by the request
                             </p>
                         </div>
-                    </div>
-                    <div class="extranote">
-                        <p><span class="noot">Note:</span> One header is required in HTML 1.1</p>
+                        <div class="extranote">
+                            <p><span class="noot">Note:</span> One header is required in HTML 1.1</p>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">EMPTY LINE</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(18)">EMPTY LINE</h3>
                     <div class="itemdetails">
                         <p>
                             - indicates the end of the header fields, and possibly a message-body.
@@ -410,7 +410,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">MESSAGE BODY (payload)</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(19)">MESSAGE BODY (payload)</h3>
                     <div class="itemdetails">
                         <p>
                             - used to carry the entity-body associated with the request or response. The message-body differs from the entity-body only when a transfer-coding has been applied.
@@ -423,7 +423,7 @@
             <h2 class="topictitle" onclick="toggleTopic4()">HTTP REQUEST METHOD</h2>
             <div id="topic4items">
                 <div class="item">
-                    <h3 class="itemtitle">Standard Method</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(20)">Standard Method</h3>
                     <div class="itemdetails">
                         <div class="subdetails">
                             <h4>Get</h4>
@@ -533,24 +533,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">Safe Method</h3>
-                    <div class="itemdetails">
-                        <p>
-                            - the GET and HEAD methods SHOULD NOT have the significance of taking an action other than retrieval (method considered safe)
-                        </p>
-                        <p>
-                            e.g GET, HEAD, OPTIONS, TRACE
-                        </p>
-                        <p>
-                            - methods has no modification
-                        </p>
-                    </div>
-                    <div class="extranote">
-                        <p><span class="noot">Note:</span></p>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle">Idempotent Method</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(21)">Safe Method</h3>
                     <div class="itemdetails">
                         <p>
                             - the GET and HEAD methods SHOULD NOT have the significance of taking an action other than retrieval (method considered safe)
@@ -564,7 +547,21 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle"> Cacheable Method</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(22)">Idempotent Method</h3>
+                    <div class="itemdetails">
+                        <p>
+                            - the GET and HEAD methods SHOULD NOT have the significance of taking an action other than retrieval (method considered safe)
+                        </p>
+                        <p>
+                            e.g GET, HEAD, OPTIONS, TRACE
+                        </p>
+                        <p>
+                            - methods has no modification
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3 class="itemtitle" onclick="toggleDet(23)"> Cacheable Method</h3>
                     <div class="itemdetails">
                         <p>
                             - if the cache is allowed to store a copy of the response message
@@ -588,7 +585,7 @@
                         field-value = *( field-content | LWS ) <br>
                         field-content = &#60; the OCTETs making up the field-value and consisting of either *TEXT or combinations of token, separators, and quoted-string &#62;
                     </p>
-                    <h3 class="itemtitle">General Header Fields</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(24)">General Header Fields</h3>
                     <div class="itemdetails">
                         <p>
                             – have general applicability for both request and response messages.
@@ -608,11 +605,11 @@
                         </div>
                     </div>
                     <div class="item">
-                        <h3 class="itemtitle">Request Header Fields</h3>
-                        <p class="descp">
-                            – have applicability for request messages.
-                        </p>
+                        <h3 class="itemtitle" onclick="toggleDet(25)">Request Header Fields</h3>
                         <div class="itemdetails">
+                            <p class="descp">
+                                – have applicability for request messages.
+                            </p>
                             <div class="subdetails">
                                 <ul>
                                     <li><strong>Accept</strong> – can be used to specify certain media types to consider whether if it is acceptable for the response.</li>
@@ -639,7 +636,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <h3 class="itemtitle">Response Header Fields</h3>
+                        <h3 class="itemtitle" onclick="toggleDet(26)">Response Header Fields</h3>
                         <div class="itemdetails">
                             <p>
                                 – have the applicability for response messages.
@@ -660,7 +657,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <h3 class="itemtitle">Entity Header Fields</h3>
+                        <h3 class="itemtitle" onclick="toggleDet(27)">Entity Header Fields</h3>
                         <div class="itemdetails">
                             <p>
                                 – define meta information about the entity-body or about the resource identified by the request.
@@ -688,7 +685,7 @@
             <h2 id="topictitle" onclick="toggleTopic6()">HTTP STATUS CODES</h2>
             <div id="topic6items">
                 <div class="item">
-                    <h3 class="itemtitle">Informational 1xx</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(28)">Informational 1xx</h3>
                     <div class="itemdetails">
                         <p>
                             Indicates a provisional response.
@@ -703,7 +700,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">Successful 2xx</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(29)">Successful 2xx</h3>
                     <div class="itemdetails">
                         <p>
                             Indicates that the client’s request was successfully received, understood, and accepted.
@@ -732,7 +729,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">Redirection 3xx</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(30)">Redirection 3xx</h3>
                     <div class="itemdetails">
                         <p>
                             This class of status codes indicates tha further action needs to be taken by the user agent in order to fulfil the request.
@@ -764,7 +761,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">Client Error 4xx</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(31)">Client Error 4xx</h3>
                     <div class="itemdetails">
                         <p>
                             This class of status codes is intended for cases in which the client seems to have erred. These status codes are applicable to any request method.
@@ -826,7 +823,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="itemtitle">Server Error 5xx</h3>
+                    <h3 class="itemtitle" onclick="toggleDet(32)">Server Error 5xx</h3>
                     <div class="itemdetails">
                         <p>
                             Class of status codes indicating cases on which the server is aware that it has erred or is incapable of performing the request.
@@ -855,9 +852,9 @@
         </div>
         <footer>
             <div class="contianerf">
-            	<p>
-            		Copyright™WebTechLectureGroup2017
-            	</p>
+                <p>
+                    Copyright™WebTechLectureGroup2017
+                </p>
             </div>
         </footer>
     </body>

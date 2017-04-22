@@ -21,51 +21,69 @@ function toggleTopic1() {
 			        x.style.display = 'none';
 			    }
 		}
-		function toggleTopic2() {
-    		var x = document.getElementById("topic2items");
-			    if (x.style.display === 'none') {
-			        x.style.display = 'block';
-			    } else {
-			        x.style.display = 'none';
-			    }
-		}
-		function toggleTopic3() {
-    		var x = document.getElementById("topic3items");
-			    if (x.style.display === 'none') {
-			        x.style.display = 'block';
-			    } else {
-			        x.style.display = 'none';
-			    }
-		}
-		function toggleTopic4() {
-    		var x = document.getElementById("topic4items");
-			    if (x.style.display === 'none') {
-			        x.style.display = 'block';
-			    } else {
-			        x.style.display = 'none';
-			    }
-		}
-		function toggleTopic5() {
-    		var x = document.getElementById("topic5items");
-			    if (x.style.display === 'none') {
-			        x.style.display = 'block';
-			    } else {
-			        x.style.display = 'none';
-			    }
-		}
-		function toggleTopic6() {
-    		var x = document.getElementById("topic6items");
-			    if (x.style.display === 'none') {
-			        x.style.display = 'block';
-			    } else {
-			        x.style.display = 'none';
-			    }
-		}
-		function toggleTopic0() {
-    		var x = document.getElementById("topic0items");
-			    if (x.style.display === 'none') {
-			        x.style.display = 'block';
-			    } else {
-			        x.style.display = 'none';
-			    }
-		}
+function toggleTopic2() {
+	var x = document.getElementById("topic2items");
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+}
+function toggleTopic3() {
+	var x = document.getElementById("topic3items");
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+}
+function toggleTopic4() {
+	var x = document.getElementById("topic4items");
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+}
+function toggleTopic5() {
+	var x = document.getElementById("topic5items");
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+}
+function toggleTopic6() {
+	var x = document.getElementById("topic6items");
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+}
+function toggleTopic0() {
+	var x = document.getElementById("topic0items");
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+}
+function toggleDet(indx) {
+	var x = document.getElementsByClassName("itemdetails")[indx];
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+}
+function toggle(displayState){
+    var elements = document.getElementsByClassName("itemdetails");
+
+    for (var i = 0; i < elements.length; i++){
+        elements[i].style.display = displayState;
+    }
+}
+
+
+toggle('none');
