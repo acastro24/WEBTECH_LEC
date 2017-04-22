@@ -27,557 +27,586 @@
             </div>
         </header>
         <div id="mainbody">
-        <div id="topic0">
-            <h2 class="topictitle" onclick="toggleTopic(0)">Introduction to HTML</h2>
-            <div id="midtopic0items">
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(0)">Questions about HTML</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <ul>
-                                <li>What is HTML?</li>
-                                <li>What is HTML's role in the Web Development?</li>
-                                <li>Who Invented HTML?</li>
-                                <li>Who Oversees the development of HTML</li>
-                                <li>What are the versions of HTML?</li>
-                                <li>Which documents specify the HTML standard?</li>
-                                <li>What is the syntax of HTML?</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(1)">HTML</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <h4>HTML</h4>
-                            <p>
-                                - used to create webpages<br>
-                                - structure(document) and content(text and media)<br>
-                                - invented by Sir Tim Berners-Lee
-                            </p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>MarkUp Language</h4>
-                            <p>
-                                - a language to get deocuments and identify resoruces<br>
-                                - SGML, XML
-                            </p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>HTML before</h4>
-                            <p>
-                                -structre and content<br>
-                                -presentation/aesthetics<br>
-                                -"Do no judge a webpage by its homepage."<br>
-                                -layout, alignment and other decorative content.
-                                -static content
-                            </p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>HTML present</h4>
-                            <p>
-                                - structure and content(HTML)<br>
-                                - presentational(CSS)<br>
-                                - behavioral (JS)<br>
-                            </p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>Who oversees HTML?</h4>
-                            <p>
-                                - W3C and IEEE
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(2)">HTML Versions</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <p><strong>- mainly for structures of the Web page</strong></p>
-                        </div>
-                        <div class="subdetails">
-                            <ul>
-                                <li>HTML 5.1 - currently</li>
-                                <li>HTML 5.2 as Working In Progress</li>
-                            </ul>
-                        </div>
-                        <div class="subdetails">
-                            <h4>HTML versions</h4>
-                            <ul>
-                                <li>HTML 1.0 - circa 1989</li>
-                                <li>HTML 2.0 standardized as an RFC 1866 November 1995</li>
-                                <li>HTML 3.0 and HTML 3.2 suspended immediately</li>
-                                <li>HTML 4.0 - 1997</li>
-                                <li>HTML 4.01 - 1999</li>
-                                <li>HTML 5.1 - November 1, 2016 recommendation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(3)">XHTML</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <p><strong> - January 26, 2000, revised August 1, 2002</strong></p>
-                            <p><strong> -Reformation of HTML 4 in XML(to mark up data) 1.0</strong></p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>XHTML</h4>
-                            <ul>
-                                <li>XHTML 1.0</li>
-                                <li>XHTML 1.1</li>
-                                <li>XHTML 2.0</li>
-                            </ul>
-                            <p><strong>* not accpted by Web developers before
-                                </strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(4)">HTML 4.01</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <h4>HTML 4.01</h4>
-                            <ul>
-                                <li>- strict</li>
-                                <li>- transitional</li>
-                                <li>- frameset</li>
-                            </ul>
-                            <h4>Ian Hickson</h4>
-                            <p>
-                                - evolutionary requirement
-                            </p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>WHATWG</h4>
-                            <p>
-                                - Web Hypertext Application Technology Working Group
-                                - was the breakawy group
-                                - HTML 5.0(2014) - HTML 5.1(2016) Advent of mobile web
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(5)">Documents that specify HTML Standard</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <h4>- W3C recommendations(RFC) specifies the standard.</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(6)">Syntax of HTML</h3>
-                    <div class="itemdetails">
-                        <p>
-                            -HTML5 still has XHTML requirements
-                        </p>
-                        <div class="subdetails">
-                            <code>&#60;!DOCTYPE html&#62;</code>
-                            <p>
-                                - U+FEFF Byte Order Mark(BOM)
-                            </p>
-                        </div>
-                        <div class="subdetails">
-                            <code>
-                            &#60;head&#62;
-                            </code>
-                            <p>
-                                - meta information
-                            </p>
-                            <code>
-                            &#60;body&#62; 
-                            </code>
-                            <p>
-                                - actual content
-                            </p>
-                            <code>
-                            &#60;h1&#62;
-                            &#60;p&#62;
-                            &#60;div&#62;
-                            </code>
-                            <p>
-                                -  start tags
-                            </p>
-                            <code>
-                            &#60;/h1&#62;
-                            &#60;/p&#62;
-                            &#60;/div&#62;
-                            </code>
-                            <p>
-                                -  end tags(with slash)
-                            </p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>Parts of a markup</h4>
-                            <code>&#60;img src="picture.jpg"&#62;</code>
-                            <ul>
-                                <li>img - element name</li>
-                                <li>src="picture.jpg" - attribute</li>
-                                <li>src - attribute name </li>
-                                <li>"picture.jpg" - attribute value </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="topic1">
-            <h2 class="topictitle" onclick="toggleTopic(1)">Semantic Mark-Up</h2>
-            <div id="midtopic1items">
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(7)">html</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <h4>head</h4>
-                            <p>title, base, link, meta, style</p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>body</h4>
-                            <p>article, aside, nav, section </p>
-                            <p>header, footer</p>
-                            <p>main</p>
-                            <p>address</p>
-                            <p>div</p>
-                            <p>h1, h2, ,h3, h4, h5, h6</p>
-                            <br>
-                            <p>p</p>
-                            <p>hr - horizontal line; thematic break</p>
-                            <p>pre - preformatted-preserves</p>
-                            <p>blockquote - larger blocks of quotation</p>
-                            <br>
-                            <p>ol, ul</p>
-                            <p class="subchild">li</p>
-                            <p>dl</p>
-                            <p class="subchild">dt,dd</p>
-                            <br>
-                            <p>fig</p>
-                            <p class="subchild">figcaption</p>
-                            <br>
-                            <p>a</p>
-                            <p>em, strong, small,s(strikethrough)</p>
-                            <p>cite, q</p>
-                            <p>dfn, abbr</p>
-                            <p>ruby, rb, rt, rtc, p</p>
-                            <p>data, time</p>
-                            <p>code, var, samp, kbd (sample input)</p>
-                            <p>sup(superscript), sub(subscript)</p>
-                            <p>i,b (has semantics) , u confusing to hypertext(HTML 4.01)Deprecated(HTML 5.0)</p>
-                            <br>
-                            <p>bdi, bdo - define a text</p>
-                            <p>span - emphasize differently</p>
-                            <p>br, wbr(window break)</p>
-                            <p>ins, del - to show edited content</p>
-                            <br>
-                            <p>table</p>
-                            <p class="subchild">caption</p>
-                            <p class="subchild">colgroup, col</p>
-                            <p class="subchild">thead, tbody, tfoot</p>
-                            <p class="subchild">tr</p>
-                            <p class="subchild2">th, td</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="topic2">
-            <h2 class="topictitle" onclick="toggleTopic(2)">CSS</h2>
-            <div id="midtopic2items">
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(8)">CSS</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <p>CSS (Cascading Style Sheets) is the code used to style your webpage.  CSS is not really a programming language. It is not a markup language either — It is a style sheet language, that is, it lets you apply styles selectively to elements in HTML documents.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(9)">HTML/XHTML</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <h4>Author</h4>
-                            <p>- The author specifies style sheets for a source document according to the conventions of the document language.</p>
-                            <p>- used by the author</p>
-                            <ul>
-                                <li>External Stylesheet - An external stylesheet is when you have your CSS written in a separate file with a .css extension, and you reference it from an HTML &#60;link&#62; element.</li>
-                                <li>Embedded stylesheet/ Internal Stylesheet - where you don't have an external CSS file, but instead place your CSS inside a &#60;style&#62; element, contained inside the HTML head.</li>
-                                <li>Inline stylesheet - CSS declarations that affect one element only, contained within a style attribute.</li>
-                        </ul>
-                        </div>
-                        <div class="subdetails">
-                            <h4>User</h4>
-                            <p>- The user may be able to specify style information for a particular document. </p>
-                            <p>- -  Used by the user.</p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>User Agent</h4>
-                            <p>- Conforming user agents must apply a default style sheet. A user agent's default style sheet should present the elements of the document language in ways that satisfy general presentation expectations for the document language.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="topic3">
-            <h2 class="topictitle" onclick="toggleTopic(3)">CSS Statements</h2>
-            <div id="midtopic3items">
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(10)">At-Rules </h3>
-                    <div class="itemdetails">
-                        <p>
-                            - start with an at-keyword, an '@' character followed immediately by an identifier (for example, '@import', '@page').
-                        </p>
-                        <p>
-                            -consists of everything up to and including the next semicolon (;) or the next block, whichever comes first.
-
-                        </p>
-                        <div class="subdetails">
-                            <ul>
-                            <li>@import - allows users to import style rules from other style sheets</li>
-                            <li>@charset - must place the rule at the very beginning of the style sheet, preceded by no characters.</li>
-                            <li>@media - rule specifies the target media types (separated by commas) of a set of statements (delimited by curly braces). Construct allows style sheet rules for various media in the same style sheet</li>
-                            <li>@page - rule consists of the keyword "@page", followed by an optional page selector, followed by a block containing declarations and at-rules. Comments and white space are allowed, but optional, between the @page token and the page selector and between the page selector and the block. The declarations in an @page rule are said to be in the page context.</li>
-                        </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(11)">CSS Rule Set</h3>
-                    <div class="itemdetails">
-                        <img id="rulesetimg" src="images/rulesetimg.png" alt="ruleset image" />
-                        <div class="subdetails">
-                            <h4>Selector</h4>
-                            <p>
-                                - The HTML element name at the start of the rule set. It selects the element(s) to be styled (in this case, pelements). 
-                            </p>
-                            <ul>
-                            <li>Element Selector</li>
-                            <li>ID Selector </li>
-                            <li>Class Selector </li>
-                            <li>Attribute Selector </li>
-                            <li>Pseudo Class Selector </li>
-                        </ul>
-                        </div>
-                        <div class="subdetails">
-                            <h4>Declaration</h4>
-                            <p>A single rule like color: red; specifying which of the element's <strong>properties</strong> you want to style.</p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>Properties</h4>
-                            <p>- Ways in which you can style a given HTML element. (In this case, color is a property of the p elements.) In CSS, you choose which properties you want to affect in your rule.</p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>Property value </h4>
-                            <p>- To the right of the property, after the colon, we have the <strong>property value</strong>, to choose one out of many possible appearances for a given property (there are many color values besides red).</p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="topic4">
-            <h2 class="topictitle" onclick="toggleTopic(4)">CSS Selectors</h2>
-            <div id="midtopic4items">
-                <img id="selector" src="images/selectors.png" alt="selectors image" />
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(12)">Simple Selectors</h3>
-                    <div class="itemdetails">
-                        <p>
-                            - A simple selector is either a type selector or universal selector followed immediately by zero or more attribute selectors, ID selectors, or pseudo-classes, in any order. The simple selector matches if all of its components match.
-                        </p>
-                        <p>
-                            - A selector is a chain of one or more simple selectors separated by combinators. Combinators are: white space, ">", and "+". White space may appear between a combinator and the simple selectors around it.
-                        </p>
-                        <div class="subdetails">
-                            <h4>Type Selector</h4>
-                            <p>- matches the name of a document language element type. A type selector matches every instance of the element type in the document tree.</p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>Universal Selector </h4>
-                            <p>- The universal selector, written "*", matches the name of any element type. It matches any single element in the document tree.</p>
-                            <p>- If the universal selector is not the only component of a simple selector, the "*" may be omitted.</p>
-                        </div>
-                        <div class="subdetails">
-                            <h4>Attribute Selector</h4>
-                            <ul>
-                                <li>[att] - Match when the element sets the "att" attribute, whatever the value of the attribute.</li>
-                                <li>[att=val] - Match when the element's "att" attribute value is exactly "val".</li>
-                                <li>[att~=val]- Represents an element with the att attribute whose value is a white space-separated list of words, one of which is exactly "val". </li>
-                                <li>[att|=val]- Represents an element with the att attribute, its value either being exactly "val" or beginning with "val" immediately followed by "-".</li>
-                            </ul>
-                        </div>
-                        <div class="subdetails">
-                            <h4>ID Selectors</h4>
-                            <p>- No two such attributes can have the same value; </p>
-                            <p>- The ID attribute of a document language allows authors to assign an identifier to one element instance in the document tree.</p>
-                            <p>- ID selectors have a higher specificity than attribute selectors</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(13)">Psuedo-classes(:)</h3>
-                    <div class="itemdetails">
-                        <p>- classify elements on characteristics other than their name, attributes or content.</p>
-                            <p>- Dynamic</p>
-                            <p>- allowed anywhere in selectors</p>
-                        <div class="subdetails">
-                            <ul>
-                                <li><h4>Link Pseudo-classes</h4>
-                                    <ul>
-                                        <li>:link -  applies for links that have not yet been visited.</li>
-                                        <li>:visited - applies once the link has been visited by the user.</li>
-                                    </ul>
-                                </li>
-                                <li><h4>Dynamic Pseudo-classes</h4>
-                                    <ul>
-                                        <li>:hover - applies while the user designates an element (with some pointing device), but does not activate it. </li>
-                                        <li>:active - applies while an element is being activated by the user.</li>
-                                        <li>:focus - applies while an element has the focus (accepts keyboard events or other forms of text input).</li>
-                                    </ul>
-                                </li>
-                                <li><h4>Language Pseudo-class</h4>
-                                    <ul>
-                                        <li>:lang - the language is determined by a combination of the "lang" attribute, the META element, and possibly by information from the protocol.</li>
-                                    </ul>
-                                </li>
-                                <li><h4>Target Pseudo-class</h4>
-                                    <ul><li>•   :target - represents the unique element, if any, with an id matching the fragment identifier of the URI of the document.</li></ul>
-                                </li>
-                                <li><h4>UI element state (interaction)</h4>
-                                    <ul>
-                                        <li>:enabled – represents any enabled element. An element is enabled if it can be activated (e.g. selected, clicked on or accept text input) or accept focus.</li>
-                                        <li>:disabled – represents any disabled element. An element is disabled if it can't be activated (e.g. selected, clicked on or accept text input) or accept focus. </li>
-                                        <li>:checked –  selector represents any radio (&#60;input type="radio"&#62;), checkbox (&#60;input type="checkbox"&#62;) or option (&#60;option&#62; in a &#60;select&#62;) element that is checked or toggled to an on state.</li>
-                                        <li>:indeterminate  – any input &#60;type="checkbox"&#62; element whose indeterminate DOM property is set to true by JavaScript<br>
-                                        -   &#60;input type="radio"&#62; elements whose radio button group's radio buttons are all unchecked<br>
-                                        - &#60;progress&#62; elements in an indeterminate state
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><h4>Pseudo Class Structural</h4>
+            <div id="topic0">
+                <h2 class="topictitle" onclick="toggleTopic(0)">Introduction to HTML</h2>
+                <div id="midtopic0items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(0)">Questions about HTML</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
                                 <ul>
-                                        <li>:root - matches the root element of a tree representing the document. Applied to HTML, :root represents the &#60;html&#62; element and is identical to the selector html, except that its specificity is higher.</li>
-                                        <li>:first-child - represents any element that is the first among a group of sibling elements</li>
-                                        <li>:last-child - represents any element that is the last among a group of sibling elements.</li>
-                                        <li>:only-child - represents any element which is the only element in a context where a group of siblings would be expected.</li>
-                                        <li>:nth-child() – matches an element that has an+b-1 siblings before it in the document tree, for a given positive or zero value for n. More simply stated, the selector matches a number of child elements whose numeric position in the series of siblings matches the pattern an+b.</li>
-                                        <li>:nth-last-child() - matches an element that has an+b-1 siblings after it in the document tree, for a given positive or zero value for n.</li>
-                                        <li>:first-of-type – represents the first sibling of its type in the list of children of its parent element.</li>
-                                        <li>:last-of-type –  represents the last sibling with the given element name in the list of children of its parent element.</li>
-                                        <li>:only-of-type –  represents any element that has no siblings of the given type.</li>
-                                        <li>:nth-of-type – matches an element that has an+b-1 siblings with the same element name before it in the document tree, for a given positive or zero value for n, and has a parent element.</li>
-                                        <li>:nth-last-of-type –  matches an element that has an+b-1 siblings with the same element name after it in the document tree, for a given positive or zero value for n, and has a parent element.</li>
-                                        <li>:empty –  represents any element that has no children at all. Only element nodes and text (including whitespace) are considered.</li>
-                                    </ul>
-                                </li>                      
-                            </ul>
+                                    <li>What is HTML?</li>
+                                    <li>What is HTML's role in the Web Development?</li>
+                                    <li>Who Invented HTML?</li>
+                                    <li>Who Oversees the development of HTML</li>
+                                    <li>What are the versions of HTML?</li>
+                                    <li>Which documents specify the HTML standard?</li>
+                                    <li>What is the syntax of HTML?</li>
+                                </ul>
+                            </div>
                         </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(1)">HTML</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>HTML</h4>
+                                <p>
+                                    - used to create webpages<br>
+                                    - structure(document) and content(text and media)<br>
+                                    - invented by Sir Tim Berners-Lee
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>MarkUp Language</h4>
+                                <p>
+                                    - a language to get deocuments and identify resoruces<br>
+                                    - SGML, XML
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>HTML before</h4>
+                                <p>
+                                    -structre and content<br>
+                                    -presentation/aesthetics<br>
+                                    -"Do no judge a webpage by its homepage."<br>
+                                    -layout, alignment and other decorative content.
+                                    -static content
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>HTML present</h4>
+                                <p>
+                                    - structure and content(HTML)<br>
+                                    - presentational(CSS)<br>
+                                    - behavioral (JS)<br>
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Who oversees HTML?</h4>
+                                <p>
+                                    - W3C and IEEE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(2)">HTML Versions</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p><strong>- mainly for structures of the Web page</strong></p>
+                            </div>
+                            <div class="subdetails">
+                                <ul>
+                                    <li>HTML 5.1 - currently</li>
+                                    <li>HTML 5.2 as Working In Progress</li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>HTML versions</h4>
+                                <ul>
+                                    <li>HTML 1.0 - circa 1989</li>
+                                    <li>HTML 2.0 standardized as an RFC 1866 November 1995</li>
+                                    <li>HTML 3.0 and HTML 3.2 suspended immediately</li>
+                                    <li>HTML 4.0 - 1997</li>
+                                    <li>HTML 4.01 - 1999</li>
+                                    <li>HTML 5.1 - November 1, 2016 recommendation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(3)">XHTML</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p><strong> - January 26, 2000, revised August 1, 2002</strong></p>
+                                <p><strong> -Reformation of HTML 4 in XML(to mark up data) 1.0</strong></p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>XHTML</h4>
+                                <ul>
+                                    <li>XHTML 1.0</li>
+                                    <li>XHTML 1.1</li>
+                                    <li>XHTML 2.0</li>
+                                </ul>
+                                <p><strong>* not accpted by Web developers before
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(4)">HTML 4.01</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>HTML 4.01</h4>
+                                <ul>
+                                    <li>- strict</li>
+                                    <li>- transitional</li>
+                                    <li>- frameset</li>
+                                </ul>
+                                <h4>Ian Hickson</h4>
+                                <p>
+                                    - evolutionary requirement
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>WHATWG</h4>
+                                <p>
+                                    - Web Hypertext Application Technology Working Group
+                                    - was the breakawy group
+                                    - HTML 5.0(2014) - HTML 5.1(2016) Advent of mobile web
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(5)">Documents that specify HTML Standard</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>- W3C recommendations(RFC) specifies the standard.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(6)">Syntax of HTML</h3>
+                        <div class="itemdetails">
+                            <p>
+                                -HTML5 still has XHTML requirements
+                            </p>
+                            <div class="subdetails">
+                                <code>&#60;!DOCTYPE html&#62;</code>
+                                <p>
+                                    - U+FEFF Byte Order Mark(BOM)
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <code>
+                                &#60;head&#62;
+                                </code>
+                                <p>
+                                    - meta information
+                                </p>
+                                <code>
+                                &#60;body&#62; 
+                                </code>
+                                <p>
+                                    - actual content
+                                </p>
+                                <code>
+                                &#60;h1&#62;
+                                &#60;p&#62;
+                                &#60;div&#62;
+                                </code>
+                                <p>
+                                    -  start tags
+                                </p>
+                                <code>
+                                &#60;/h1&#62;
+                                &#60;/p&#62;
+                                &#60;/div&#62;
+                                </code>
+                                <p>
+                                    -  end tags(with slash)
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Parts of a markup</h4>
+                                <code>&#60;img src="picture.jpg"&#62;</code>
+                                <ul>
+                                    <li>img - element name</li>
+                                    <li>src="picture.jpg" - attribute</li>
+                                    <li>src - attribute name </li>
+                                    <li>"picture.jpg" - attribute value </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic1">
+                <h2 class="topictitle" onclick="toggleTopic(1)">Semantic Mark-Up</h2>
+                <div id="midtopic1items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(7)">html</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>head</h4>
+                                <p>title, base, link, meta, style</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>body</h4>
+                                <p>article, aside, nav, section </p>
+                                <p>header, footer</p>
+                                <p>main</p>
+                                <p>address</p>
+                                <p>div</p>
+                                <p>h1, h2, ,h3, h4, h5, h6</p>
+                                <br>
+                                <p>p</p>
+                                <p>hr - horizontal line; thematic break</p>
+                                <p>pre - preformatted-preserves</p>
+                                <p>blockquote - larger blocks of quotation</p>
+                                <br>
+                                <p>ol, ul</p>
+                                <p class="subchild">li</p>
+                                <p>dl</p>
+                                <p class="subchild">dt,dd</p>
+                                <br>
+                                <p>fig</p>
+                                <p class="subchild">figcaption</p>
+                                <br>
+                                <p>a</p>
+                                <p>em, strong, small,s(strikethrough)</p>
+                                <p>cite, q</p>
+                                <p>dfn, abbr</p>
+                                <p>ruby, rb, rt, rtc, p</p>
+                                <p>data, time</p>
+                                <p>code, var, samp, kbd (sample input)</p>
+                                <p>sup(superscript), sub(subscript)</p>
+                                <p>i,b (has semantics) , u confusing to hypertext(HTML 4.01)Deprecated(HTML 5.0)</p>
+                                <br>
+                                <p>bdi, bdo - define a text</p>
+                                <p>span - emphasize differently</p>
+                                <p>br, wbr(window break)</p>
+                                <p>ins, del - to show edited content</p>
+                                <br>
+                                <p>table</p>
+                                <p class="subchild">caption</p>
+                                <p class="subchild">colgroup, col</p>
+                                <p class="subchild">thead, tbody, tfoot</p>
+                                <p class="subchild">tr</p>
+                                <p class="subchild2">th, td</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic2">
+                <h2 class="topictitle" onclick="toggleTopic(2)">Introduction to CSS</h2>
+                <div id="midtopic2items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(8)">CSS</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p>CSS (Cascading Style Sheets) is the code used to style your webpage.  CSS is not really a programming language. It is not a markup language either — It is a style sheet language, that is, it lets you apply styles selectively to elements in HTML documents.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(9)">HTML/XHTML</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>Author</h4>
+                                <p>- The author specifies style sheets for a source document according to the conventions of the document language.</p>
+                                <p>- used by the author</p>
+                                <ul>
+                                    <li>External Stylesheet - An external stylesheet is when you have your CSS written in a separate file with a .css extension, and you reference it from an HTML &#60;link&#62; element.</li>
+                                    <li>Embedded stylesheet/ Internal Stylesheet - where you don't have an external CSS file, but instead place your CSS inside a &#60;style&#62; element, contained inside the HTML head.</li>
+                                    <li>Inline stylesheet - CSS declarations that affect one element only, contained within a style attribute.</li>
+                            </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>User</h4>
+                                <p>- The user may be able to specify style information for a particular document. </p>
+                                <p>- -  Used by the user.</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>User Agent</h4>
+                                <p>- Conforming user agents must apply a default style sheet. A user agent's default style sheet should present the elements of the document language in ways that satisfy general presentation expectations for the document language.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic3">
+                <h2 class="topictitle" onclick="toggleTopic(3)">CSS Statements</h2>
+                <div id="midtopic3items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(10)">At-Rules </h3>
+                        <div class="itemdetails">
+                            <p>
+                                - start with an at-keyword, an '@' character followed immediately by an identifier (for example, '@import', '@page').
+                            </p>
+                            <p>
+                                -consists of everything up to and including the next semicolon (;) or the next block, whichever comes first.
 
+                            </p>
+                            <div class="subdetails">
+                                <ul>
+                                <li>@import - allows users to import style rules from other style sheets</li>
+                                <li>@charset - must place the rule at the very beginning of the style sheet, preceded by no characters.</li>
+                                <li>@media - rule specifies the target media types (separated by commas) of a set of statements (delimited by curly braces). Construct allows style sheet rules for various media in the same style sheet</li>
+                                <li>@page - rule consists of the keyword "@page", followed by an optional page selector, followed by a block containing declarations and at-rules. Comments and white space are allowed, but optional, between the @page token and the page selector and between the page selector and the block. The declarations in an @page rule are said to be in the page context.</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(11)">CSS Rule Set</h3>
+                        <div class="itemdetails">
+                            <img id="rulesetimg" src="images/rulesetimg.png" alt="ruleset image" />
+                            <div class="subdetails">
+                                <h4>Selector</h4>
+                                <p>
+                                    - The HTML element name at the start of the rule set. It selects the element(s) to be styled (in this case, pelements). 
+                                </p>
+                                <ul>
+                                <li>Element Selector</li>
+                                <li>ID Selector </li>
+                                <li>Class Selector </li>
+                                <li>Attribute Selector </li>
+                                <li>Pseudo Class Selector </li>
+                            </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Declaration</h4>
+                                <p>A single rule like color: red; specifying which of the element's <strong>properties</strong> you want to style.</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Properties</h4>
+                                <p>- Ways in which you can style a given HTML element. (In this case, color is a property of the p elements.) In CSS, you choose which properties you want to affect in your rule.</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Property value </h4>
+                                <p>- To the right of the property, after the colon, we have the <strong>property value</strong>, to choose one out of many possible appearances for a given property (there are many color values besides red).</p>
+                                <p></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(14)">Combinators </h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <ul>
-                                <li>Descendants – is whitespace that separates two sequences of simple selectors.</li>
-                                <li>Child Combinator – child combinator is made of the "greater-than sign" (>) character and separates two sequences of simple selectors.</li>
-                                <li>Sibling Combinator
+            </div>
+            <div id="topic4">
+                <h2 class="topictitle" onclick="toggleTopic(4)">CSS Selectors</h2>
+                <div id="midtopic4items">
+                    <img id="selector" src="images/selectors.png" alt="selectors image" />
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(12)">Simple Selectors</h3>
+                        <div class="itemdetails">
+                            <p>
+                                - A simple selector is either a type selector or universal selector followed immediately by zero or more attribute selectors, ID selectors, or pseudo-classes, in any order. The simple selector matches if all of its components match.
+                            </p>
+                            <p>
+                                - A selector is a chain of one or more simple selectors separated by combinators. Combinators are: white space, ">", and "+". White space may appear between a combinator and the simple selectors around it.
+                            </p>
+                            <div class="subdetails">
+                                <h4>Type Selector</h4>
+                                <p>- matches the name of a document language element type. A type selector matches every instance of the element type in the document tree.</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Universal Selector </h4>
+                                <p>- The universal selector, written "*", matches the name of any element type. It matches any single element in the document tree.</p>
+                                <p>- If the universal selector is not the only component of a simple selector, the "*" may be omitted.</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Attribute Selector</h4>
+                                <ul>
+                                    <li>[att] - Match when the element sets the "att" attribute, whatever the value of the attribute.</li>
+                                    <li>[att=val] - Match when the element's "att" attribute value is exactly "val".</li>
+                                    <li>[att~=val]- Represents an element with the att attribute whose value is a white space-separated list of words, one of which is exactly "val". </li>
+                                    <li>[att|=val]- Represents an element with the att attribute, its value either being exactly "val" or beginning with "val" immediately followed by "-".</li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>ID Selectors</h4>
+                                <p>- No two such attributes can have the same value; </p>
+                                <p>- The ID attribute of a document language allows authors to assign an identifier to one element instance in the document tree.</p>
+                                <p>- ID selectors have a higher specificity than attribute selectors</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(13)">Psuedo-classes(:)</h3>
+                        <div class="itemdetails">
+                            <p>- classify elements on characteristics other than their name, attributes or content.</p>
+                                <p>- Dynamic</p>
+                                <p>- allowed anywhere in selectors</p>
+                            <div class="subdetails">
+                                <ul>
+                                    <li><h4>Link Pseudo-classes</h4>
+                                        <ul>
+                                            <li>:link -  applies for links that have not yet been visited.</li>
+                                            <li>:visited - applies once the link has been visited by the user.</li>
+                                        </ul>
+                                    </li>
+                                    <li><h4>Dynamic Pseudo-classes</h4>
+                                        <ul>
+                                            <li>:hover - applies while the user designates an element (with some pointing device), but does not activate it. </li>
+                                            <li>:active - applies while an element is being activated by the user.</li>
+                                            <li>:focus - applies while an element has the focus (accepts keyboard events or other forms of text input).</li>
+                                        </ul>
+                                    </li>
+                                    <li><h4>Language Pseudo-class</h4>
+                                        <ul>
+                                            <li>:lang - the language is determined by a combination of the "lang" attribute, the META element, and possibly by information from the protocol.</li>
+                                        </ul>
+                                    </li>
+                                    <li><h4>Target Pseudo-class</h4>
+                                        <ul><li>•   :target - represents the unique element, if any, with an id matching the fragment identifier of the URI of the document.</li></ul>
+                                    </li>
+                                    <li><h4>UI element state (interaction)</h4>
+                                        <ul>
+                                            <li>:enabled – represents any enabled element. An element is enabled if it can be activated (e.g. selected, clicked on or accept text input) or accept focus.</li>
+                                            <li>:disabled – represents any disabled element. An element is disabled if it can't be activated (e.g. selected, clicked on or accept text input) or accept focus. </li>
+                                            <li>:checked –  selector represents any radio (&#60;input type="radio"&#62;), checkbox (&#60;input type="checkbox"&#62;) or option (&#60;option&#62; in a &#60;select&#62;) element that is checked or toggled to an on state.</li>
+                                            <li>:indeterminate  – any input &#60;type="checkbox"&#62; element whose indeterminate DOM property is set to true by JavaScript<br>
+                                            -   &#60;input type="radio"&#62; elements whose radio button group's radio buttons are all unchecked<br>
+                                            - &#60;progress&#62; elements in an indeterminate state
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><h4>Pseudo Class Structural</h4>
                                     <ul>
-                                        <li>Adjacent - sibling combinator is made of the "plus sign" (+) character that separates two sequences of simple selectors.</li>
-                                        <li>General - sibling combinator is made of the "tilde" (~) character that separates two sequences of simple selectors.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subdetails">
-                            <table>
-                                <tr>
-                                    <th>Combinators</th>
-                                    <th>Select</th>
-                                </tr>
-                                <tr>
-                                    <td>AB</td>
-                                    <td>Any element matching both A and B at the same time.</td>
-                                </tr>
-                                <tr>
-                                    <td>A B</td>
-                                    <td>Any element matching B that is a descendant of an element matching A (that is: a child, or a child of a child, etc.)</td>
-                                </tr>
-                                <tr>
-                                    <td>A > B</td>
-                                    <td>Any element matching B that is a direct child of an element matching A.</td>
-                                </tr>
-                                <tr>
-                                    <td>A + B</td>
-                                    <td>Any element matching B that is the next sibling of an element matching A (that is: the next child of the same parent.)</td>
-                                </tr>
-                                <tr>
-                                    <td>A ~ B</td>
-                                    <td>Any element matching B that is among the next sibling of an element matching A (that is: one of the next children of the same parent.)</td>
-                                </tr>
-                            </table>
+                                            <li>:root - matches the root element of a tree representing the document. Applied to HTML, :root represents the &#60;html&#62; element and is identical to the selector html, except that its specificity is higher.</li>
+                                            <li>:first-child - represents any element that is the first among a group of sibling elements</li>
+                                            <li>:last-child - represents any element that is the last among a group of sibling elements.</li>
+                                            <li>:only-child - represents any element which is the only element in a context where a group of siblings would be expected.</li>
+                                            <li>:nth-child() – matches an element that has an+b-1 siblings before it in the document tree, for a given positive or zero value for n. More simply stated, the selector matches a number of child elements whose numeric position in the series of siblings matches the pattern an+b.</li>
+                                            <li>:nth-last-child() - matches an element that has an+b-1 siblings after it in the document tree, for a given positive or zero value for n.</li>
+                                            <li>:first-of-type – represents the first sibling of its type in the list of children of its parent element.</li>
+                                            <li>:last-of-type –  represents the last sibling with the given element name in the list of children of its parent element.</li>
+                                            <li>:only-of-type –  represents any element that has no siblings of the given type.</li>
+                                            <li>:nth-of-type – matches an element that has an+b-1 siblings with the same element name before it in the document tree, for a given positive or zero value for n, and has a parent element.</li>
+                                            <li>:nth-last-of-type –  matches an element that has an+b-1 siblings with the same element name after it in the document tree, for a given positive or zero value for n, and has a parent element.</li>
+                                            <li>:empty –  represents any element that has no children at all. Only element nodes and text (including whitespace) are considered.</li>
+                                        </ul>
+                                    </li>                      
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <h3 class="itemtitle" onclick="toggleDet(15)">Pseudo-elements (::)</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <ul>
-                                <li>::first-letter - selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line.</li>
-                                <li>::first-line - applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element.</li>
-                                <li>::before - creates a pseudo-element that is the first child of the element matched. It is often used to add cosmetic content to an element by using the content property. This element is inline by default.</li>
-                                <li>::after - matches a virtual last child of the selected element. It is typically used to add cosmetic content to an element by using the content CSS property. This element is inline by default.</li>
-                            </ul>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(14)">Combinators </h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <ul>
+                                    <li>Descendants – is whitespace that separates two sequences of simple selectors.</li>
+                                    <li>Child Combinator – child combinator is made of the "greater-than sign" (>) character and separates two sequences of simple selectors.</li>
+                                    <li>Sibling Combinator
+                                        <ul>
+                                            <li>Adjacent - sibling combinator is made of the "plus sign" (+) character that separates two sequences of simple selectors.</li>
+                                            <li>General - sibling combinator is made of the "tilde" (~) character that separates two sequences of simple selectors.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <table>
+                                    <tr>
+                                        <th>Combinators</th>
+                                        <th>Select</th>
+                                    </tr>
+                                    <tr>
+                                        <td>AB</td>
+                                        <td>Any element matching both A and B at the same time.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A B</td>
+                                        <td>Any element matching B that is a descendant of an element matching A (that is: a child, or a child of a child, etc.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A > B</td>
+                                        <td>Any element matching B that is a direct child of an element matching A.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A + B</td>
+                                        <td>Any element matching B that is the next sibling of an element matching A (that is: the next child of the same parent.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A ~ B</td>
+                                        <td>Any element matching B that is among the next sibling of an element matching A (that is: one of the next children of the same parent.)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(15)">Pseudo-elements (::)</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <ul>
+                                    <li>::first-letter - selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line.</li>
+                                    <li>::first-line - applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element.</li>
+                                    <li>::before - creates a pseudo-element that is the first child of the element matched. It is often used to add cosmetic content to an element by using the content property. This element is inline by default.</li>
+                                    <li>::after - matches a virtual last child of the selected element. It is typically used to add cosmetic content to an element by using the content CSS property. This element is inline by default.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="topic5">
-            <h2 class="topictitle" onclick="toggleTopic(5)"></h2>
-            <div id="midtopic5items">
-                <div class="item">
-                    <h3 class="itemtitle">html</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <h4></h4>
+            <div id="topic5">
+                <h2 class="topictitle" onclick="toggleTopic(5)">CSS Declaration</h2>
+                <div id="midtopic5items">
+                    <img id="declaration" src="images/declaration.png" alt="declaration image" />
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(16)">Properties</h3>
+                        <div class="itemdetails">
+                            <p>
+                                - an identifier, that is a human-readable name, that defines which feature is considered.
+                            </p>
+                            <div class="subdetails">
+                            <h4>Shorthand properties</h4>
+                            <p>- are CSS properties that let you set the values of several other CSS properties simultaneously. Using a shorthand property, a Web developer can write more concise and often more readable style sheets, saving time and energy.</p>
+                            </div>
                         </div>
-                        <div class="subdetails">
-                            <h4></h4>
-                            <p></p>
-                            <p></p>
-                        </div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="topic[insertnumberhere]">
-            <h2 class="topictitle" onclick="toggleTopic()"></h2>
-            <div id="midtopic[number]items">
-                <div class="item">
-                    <h3 class="itemtitle">html</h3>
-                    <div class="itemdetails">
-                        <div class="subdetails">
-                            <h4></h4>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(17)">Values</h3>
+                        <div class="itemdetails">
+                            <p>
+                                - describe how the feature must be handled by the engine. Each property has a set of valid values, defined by a formal grammar, as well as a semantic meaning, implemented by the browser engine.
+                            </p>
+                            <div class="subdetails">
+                                <ul>
+                                    <li>Keyword</li>
+                                    <li>Number - Length values for specifying e.g. element width, border thickness, or font size, and unitless integers for specifying e.g. relative line width or number of times to run an animation.</li>
+                                    <li>Dimension
+                                        <ul>
+                                            <li>Length units</li>
+                                            <li>Font-relative : em, ex, ch, rem</li>
+                                            <li>Viewport-percentage : vx, wh, vmin, umax</li>
+                                            <li>Absolute lengths : cm, mm, q, in, pt, pc, px</li>
+                                            <li>Angle units : deg, grad, rad</li>
+                                        </ul>
+                                    </li>
+                                    <li>Length units</li>
+                                    <li>Font-relative : em, ex, ch, rem</li>
+                                    <li>Viewport-percentage : vx, wh, vmin, umax</li>
+                                    <li>Absolute lengths : cm, mm, q, in, pt, pc, px</li>
+                                    <li>Angle units : deg, grad, rad</li>
+                                    <li>Duration : s, ms</li>
+                                    <li>Frequency : hz, khz</li>
+                                    <li>Resolution : dpi, dpcm, dppx</li>
+                                    <li>Percentages -  Can also be used to specify size or length — relative to a parent container's width or height </li>
+                                    <li>URL and URI’s</li>
+                                    <li>Colors - For specifying background colors, text colors, etc.</li>
+                                    <li>Strings</li>
+                                    <li>Functions - For specifying e.g. background images or background image gradients.
+                                        <ul>
+                                            <li>Calc()</li>
+                                            <li>Attr()</li>
+                                            <li>Counter()</li>
+                                            <li>Countless()</li>
+                                            <li>Linear-gradient()</li>
+                                            <li>Radial-gradient()</li>
+                                            <li>Translate</li>
+                                            <li>Scale</li>
+                                            <li>Rotate</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <p>
+                                    A property and value pair is called a declaration, and any CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out, and to style it.
+                                </p>
+                            </div>
+                             <div class="subdetails">
+                                <p>Both properties and values are case-sensitive in CSS. The pair is separated by a colon, ':' (U+003A COLON), and white spaces before, between, and after properties and values, but not necessarily inside, are ignored.</p>
+                            </div>
                         </div>
-                        <div class="subdetails">
-                            <h4></h4>
-                            <p></p>
-                            <p></p>
-                        </div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
                     </div>
                 </div>
             </div>
