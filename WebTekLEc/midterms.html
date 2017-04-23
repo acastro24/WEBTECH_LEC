@@ -304,7 +304,7 @@
                                     <li>External Stylesheet - An external stylesheet is when you have your CSS written in a separate file with a .css extension, and you reference it from an HTML &#60;link&#62; element.</li>
                                     <li>Embedded stylesheet/ Internal Stylesheet - where you don't have an external CSS file, but instead place your CSS inside a &#60;style&#62; element, contained inside the HTML head.</li>
                                     <li>Inline stylesheet - CSS declarations that affect one element only, contained within a style attribute.</li>
-                            </ul>
+                                </ul>
                             </div>
                             <div class="subdetails">
                                 <h4>User</h4>
@@ -330,15 +330,14 @@
                             </p>
                             <p>
                                 -consists of everything up to and including the next semicolon (;) or the next block, whichever comes first.
-
                             </p>
                             <div class="subdetails">
                                 <ul>
-                                <li>@import - allows users to import style rules from other style sheets</li>
-                                <li>@charset - must place the rule at the very beginning of the style sheet, preceded by no characters.</li>
-                                <li>@media - rule specifies the target media types (separated by commas) of a set of statements (delimited by curly braces). Construct allows style sheet rules for various media in the same style sheet</li>
-                                <li>@page - rule consists of the keyword "@page", followed by an optional page selector, followed by a block containing declarations and at-rules. Comments and white space are allowed, but optional, between the @page token and the page selector and between the page selector and the block. The declarations in an @page rule are said to be in the page context.</li>
-                            </ul>
+                                    <li>@import - allows users to import style rules from other style sheets</li>
+                                    <li>@charset - must place the rule at the very beginning of the style sheet, preceded by no characters.</li>
+                                    <li>@media - rule specifies the target media types (separated by commas) of a set of statements (delimited by curly braces). Construct allows style sheet rules for various media in the same style sheet</li>
+                                    <li>@page - rule consists of the keyword "@page", followed by an optional page selector, followed by a block containing declarations and at-rules. Comments and white space are allowed, but optional, between the @page token and the page selector and between the page selector and the block. The declarations in an @page rule are said to be in the page context.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -352,12 +351,12 @@
                                     - The HTML element name at the start of the rule set. It selects the element(s) to be styled (in this case, pelements). 
                                 </p>
                                 <ul>
-                                <li>Element Selector</li>
-                                <li>ID Selector </li>
-                                <li>Class Selector </li>
-                                <li>Attribute Selector </li>
-                                <li>Pseudo Class Selector </li>
-                            </ul>
+                                    <li>Element Selector</li>
+                                    <li>ID Selector </li>
+                                    <li>Class Selector </li>
+                                    <li>Attribute Selector </li>
+                                    <li>Pseudo Class Selector </li>
+                                </ul>
                             </div>
                             <div class="subdetails">
                                 <h4>Declaration</h4>
@@ -419,44 +418,52 @@
                         <h3 class="itemtitle" onclick="toggleDet(13)">Psuedo-classes(:)</h3>
                         <div class="itemdetails">
                             <p>- classify elements on characteristics other than their name, attributes or content.</p>
-                                <p>- Dynamic</p>
-                                <p>- allowed anywhere in selectors</p>
+                            <p>- Dynamic</p>
+                            <p>- allowed anywhere in selectors</p>
                             <div class="subdetails">
                                 <ul>
-                                    <li><h4>Link Pseudo-classes</h4>
+                                    <li>
+                                        <h4>Link Pseudo-classes</h4>
                                         <ul>
                                             <li>:link -  applies for links that have not yet been visited.</li>
                                             <li>:visited - applies once the link has been visited by the user.</li>
                                         </ul>
                                     </li>
-                                    <li><h4>Dynamic Pseudo-classes</h4>
+                                    <li>
+                                        <h4>Dynamic Pseudo-classes</h4>
                                         <ul>
                                             <li>:hover - applies while the user designates an element (with some pointing device), but does not activate it. </li>
                                             <li>:active - applies while an element is being activated by the user.</li>
                                             <li>:focus - applies while an element has the focus (accepts keyboard events or other forms of text input).</li>
                                         </ul>
                                     </li>
-                                    <li><h4>Language Pseudo-class</h4>
+                                    <li>
+                                        <h4>Language Pseudo-class</h4>
                                         <ul>
                                             <li>:lang - the language is determined by a combination of the "lang" attribute, the META element, and possibly by information from the protocol.</li>
                                         </ul>
                                     </li>
-                                    <li><h4>Target Pseudo-class</h4>
-                                        <ul><li>•   :target - represents the unique element, if any, with an id matching the fragment identifier of the URI of the document.</li></ul>
+                                    <li>
+                                        <h4>Target Pseudo-class</h4>
+                                        <ul>
+                                            <li>•   :target - represents the unique element, if any, with an id matching the fragment identifier of the URI of the document.</li>
+                                        </ul>
                                     </li>
-                                    <li><h4>UI element state (interaction)</h4>
+                                    <li>
+                                        <h4>UI element state (interaction)</h4>
                                         <ul>
                                             <li>:enabled – represents any enabled element. An element is enabled if it can be activated (e.g. selected, clicked on or accept text input) or accept focus.</li>
                                             <li>:disabled – represents any disabled element. An element is disabled if it can't be activated (e.g. selected, clicked on or accept text input) or accept focus. </li>
                                             <li>:checked –  selector represents any radio (&#60;input type="radio"&#62;), checkbox (&#60;input type="checkbox"&#62;) or option (&#60;option&#62; in a &#60;select&#62;) element that is checked or toggled to an on state.</li>
                                             <li>:indeterminate  – any input &#60;type="checkbox"&#62; element whose indeterminate DOM property is set to true by JavaScript<br>
-                                            -   &#60;input type="radio"&#62; elements whose radio button group's radio buttons are all unchecked<br>
-                                            - &#60;progress&#62; elements in an indeterminate state
+                                                -   &#60;input type="radio"&#62; elements whose radio button group's radio buttons are all unchecked<br>
+                                                - &#60;progress&#62; elements in an indeterminate state
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><h4>Pseudo Class Structural</h4>
-                                    <ul>
+                                    <li>
+                                        <h4>Pseudo Class Structural</h4>
+                                        <ul>
                                             <li>:root - matches the root element of a tree representing the document. Applied to HTML, :root represents the &#60;html&#62; element and is identical to the selector html, except that its specificity is higher.</li>
                                             <li>:first-child - represents any element that is the first among a group of sibling elements</li>
                                             <li>:last-child - represents any element that is the last among a group of sibling elements.</li>
@@ -470,10 +477,9 @@
                                             <li>:nth-last-of-type –  matches an element that has an+b-1 siblings with the same element name after it in the document tree, for a given positive or zero value for n, and has a parent element.</li>
                                             <li>:empty –  represents any element that has no children at all. Only element nodes and text (including whitespace) are considered.</li>
                                         </ul>
-                                    </li>                      
+                                    </li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                     <div class="item">
@@ -483,7 +489,8 @@
                                 <ul>
                                     <li>Descendants – is whitespace that separates two sequences of simple selectors.</li>
                                     <li>Child Combinator – child combinator is made of the "greater-than sign" (>) character and separates two sequences of simple selectors.</li>
-                                    <li>Sibling Combinator
+                                    <li>
+                                        Sibling Combinator
                                         <ul>
                                             <li>Adjacent - sibling combinator is made of the "plus sign" (+) character that separates two sequences of simple selectors.</li>
                                             <li>General - sibling combinator is made of the "tilde" (~) character that separates two sequences of simple selectors.</li>
@@ -547,8 +554,8 @@
                                 - an identifier, that is a human-readable name, that defines which feature is considered.
                             </p>
                             <div class="subdetails">
-                            <h4>Shorthand properties</h4>
-                            <p>- are CSS properties that let you set the values of several other CSS properties simultaneously. Using a shorthand property, a Web developer can write more concise and often more readable style sheets, saving time and energy.</p>
+                                <h4>Shorthand properties</h4>
+                                <p>- are CSS properties that let you set the values of several other CSS properties simultaneously. Using a shorthand property, a Web developer can write more concise and often more readable style sheets, saving time and energy.</p>
                             </div>
                         </div>
                     </div>
@@ -562,7 +569,8 @@
                                 <ul>
                                     <li>Keyword</li>
                                     <li>Number - Length values for specifying e.g. element width, border thickness, or font size, and unitless integers for specifying e.g. relative line width or number of times to run an animation.</li>
-                                    <li>Dimension
+                                    <li>
+                                        Dimension
                                         <ul>
                                             <li>Length units</li>
                                             <li>Font-relative : em, ex, ch, rem</li>
@@ -583,7 +591,8 @@
                                     <li>URL and URI’s</li>
                                     <li>Colors - For specifying background colors, text colors, etc.</li>
                                     <li>Strings</li>
-                                    <li>Functions - For specifying e.g. background images or background image gradients.
+                                    <li>
+                                        Functions - For specifying e.g. background images or background image gradients.
                                         <ul>
                                             <li>Calc()</li>
                                             <li>Attr()</li>
@@ -603,9 +612,305 @@
                                     A property and value pair is called a declaration, and any CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out, and to style it.
                                 </p>
                             </div>
-                             <div class="subdetails">
+                            <div class="subdetails">
                                 <p>Both properties and values are case-sensitive in CSS. The pair is separated by a colon, ':' (U+003A COLON), and white spaces before, between, and after properties and values, but not necessarily inside, are ignored.</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic6">
+                <h2 class="topictitle" onclick="toggleTopic(6)">Client-side web scripting</h2>
+                <div id="midtopic6items">
+                    <p>
+                        - Allows programs (i.e. scripts) to be downloaded from a web server and executed in the client environment (e.g. browser) 
+                    </p>
+                    <p>
+                        -   Common client-side scripting technologies JavaScript, ECMAScript, Jscript, VBScript, ActionScriptJava Script, Java Applets, ActiveX Controls, Flash Animations, Microsoft Silverlight, Adobe Integrated Runtime (Adobe AIR)
+                    </p>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(18)">Java Script</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p>
+                                    -   Developed circa 1995 by Brendan Eich at Netscape Communications as the scripting language for the Netscape Navigator Browser
+                                </p>
+                                <p>
+                                    -   Formerly called Mocha, then LiveScript, then JavaScript
+                                </p>
+                                <p>
+                                    -   Standardized by ECMA International as ECMAScript
+                                </p>
+                                <p>-    Latest version: JavaScipt 1.8.5, ECMAScript 6 [ECMA-262 7th Edition]</p>
+                                <p>
+                                    -   JavaScript Frameworks
+                                </p>
+                                <p class="subchild">
+                                    -   script.aculo.us, jQuery, MooTools, Prototype, Dojo Toolkit, Angular-s, ReactJS, Vue, Ember, Meteor, etc.
+                                </p>
+                                <p>
+                                    -   JavaScript + DOM/BOM + CSS + (X)HTML = DHTML
+                                </p>
+                                <p>
+                                    -   JavaScript code is executed in response to document event
+                                </p>
+                                <p>
+                                    -   JavaScript code in (X)HTML pages can be executed “on the fly” as the document is rendered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(19)">3 ways of associating java script with HTML</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <ul>
+                                    <li>Externally Linked Script – JavaScript that is found outside of the HTML document and whose file extension name has .js property.</li>
+                                    <li>Embedded Script – JavaScript hat is found within the HTML document</li>
+                                    <li>Inline Script – Script that is found within the HTML document body and has the highest priority out of the three ways in associating javascript with HTML</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(20)">html</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <ul>
+                                    <li>Global/Top-level Code – executes instantly when the java script has been executed</li>
+                                    <li>Function Block Code – it is a block of code that only executes when being called by its function name.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic7">
+                <h2 class="topictitle" onclick="toggleTopic(7)">Attributes of JavaScript</h2>
+                <div id="midtopic7items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(21)">Attributes of &#60;script&#62; tag</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <ul>
+                                    <li>&#60;script defer&#62; – which waits until the document has been rendered then executes the script.</li>
+                                    <li>&#60;script async&#62; – is short for asynchronous, which runs the document and as soon as the script becomes available, run the script.</li>
+                                    <li>&#60;no script&#62; - is for security purposes of blind side scripting</li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(22)">Attributes of element.attributes</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                            <p>
+                                window.document.innerText – edit the content of the specified target text without the markup element
+                            </p>
+                            <p>
+                                window.document.outerText – edit the content of the specified target text with the markup element
+                            </p>
+                            <p>
+                                window.document.textContent - edit the content of the specified target text content
+                            </p>
+                            <p>
+                                window.document.innerHTML - edit the content of the specified target html tag without the markup element
+                            </p>
+                            <p>
+                                window.document.outerHTML - edit the content of the specified target html tag with the markup element
+                            </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Window object</h4>
+                                <p>
+                                    – run time environment
+                                </p>
+                                <p>Examples: </p>
+                                <p class="subchild">
+                                    <ul>
+                                        <li>window.navigator.vendor<p class="subchild2">“Google Inc”</p>
+                                        </li>
+                                        <li>window.navigator.appName<p class="subchild2">“Netscape”</p></li>
+                                        <li>window.screen.width<p class="subchild2">1364</p></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(23)">Attributes of document.getElementBy()</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p>-    document.getElementById()</p>
+                                <p>-    document.getElementByName()</p>
+                                <p>-    document.getElementByTagName()</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>HTML DOM querySelector() Method: this method returns first element that satisfies a specified CSS selector in the document.</h4>
+                                <p>-    document.querySelector()</p>
+                                <p>-    document.querySelectorAll()</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic8">
+                <h2 class="topictitle" onclick="toggleTopic(8)">Basic Language Features</h2>
+                <div id="midtopic8items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(24)">JavaScript</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <ul>
+                                    <li>Paradigm: Imperative Programming Language</li>
+                                    <li>Type System and Scoping rules
+                                        <ul>
+                                            <li>Loosely typed</li>
+                                            <li>Dynamic Data typed</li>
+                                        </ul>
+                                    </li>
+                                    <li>JavaScript uses JIT Compiler</li>
+                                    <li>3 keywords inn JS Ecma Script
+                                        <ul>
+                                            <li>var – creating a global object property</li>
+                                            <li>let – are standalone objects, declares a block scope local variable, optionally initializing it to a value.</li>
+                                            <li>const – are standalone objects, the value declared in constant cannot by re-assigned a new value and it cant be re-declared</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic9">
+                <h2 class="topictitle" onclick="toggleTopic(9)">Data Types of JavaScript</h2>
+                <div id="midtopic9items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(25)">Simple/Primitive values</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <ul>
+                                    <li>Boolean - true/false
+                                        <ul>
+                                            <li>Falsy - value is a value that translates to false when evaluated in a Boolean context. “not really false but equals to false”</li>
+                                            <li>
+                                                Truthy - value is a value that translates to true when evaluated in a Boolean context. All values are truthy unless they are defined as falsy. “not really true but equals to true” 
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Numbers - decimal, hexadecimal notation
+                                        <ul>
+                                            <li>Binary – Syntax: 0b[number]</li>
+                                            <li>Octal – Syntax: 0[number]</li>
+                                            <li>Hexadecimal – Syntax: 0x[number]</li>
+                                            <li>Exponential – Syntax: e[number]</li>
+                                        </ul>
+                                    </li>
+                                    <li>Strings
+                                        <ul>
+                                            <li>Single quote delimited</li>
+                                            <li>Double quote delimited</li>
+                                            <li>String interpolation syntax: ‘String’+a or ‘String:${a} ’</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Simple/Primitive types</h4>
+                                <ul>
+                                    <li>Boolean type: Has two values, which is either true or false.</li>
+                                    <li>Null Type: is an empty reference to an Object</li>
+                                    <li>Undefined Type: anything that is not defined</li>
+                                    <li>Number Type: has value/s that takes form of a digit or a sequence of digits</li>
+                                    <li>String type: has value/s that take form of a letter or a sequence of letters</li>
+                                    <li>Symbol Type: is a unique immutable primitive value and may be used as a key of an Objet Property</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(26)">Composite (Objects) Types </h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>Core JavaScript Objects</h4>
+                                <ul>
+                                    <li>Object, Number, Boolean, String, Date, Math, Global, RegExp, Error</li>
+                                    <li>Arrays (Array)</li>
+                                    <li>Functions (Function, Arguments)</li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>DOM Objects</h4>
+                                <ul>
+                                    <li>Anchor, Applet, Attr, Comment, DOMException, DOMImplementation, DocumentFragment </li>
+                                    <li>Element, Event, Form, Image, Input, Layer, Link, Node, Option, Select, Style, Text, TextArea</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic10">
+                <h2 class="topictitle" onclick="toggleTopic(10)">Functions in Java Script</h2>
+                <div id="midtopic10items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(27)">Functions</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p>-    is the building blocks in JavaScript. </p>
+                                <p>-    Functions is a procedural abstraction </p>
+                                <p>-    Function  is also treated as object</p>
+                                <p>-    Functions can be recursive; functions that call themselves</p>
+                                <p>-    Functions can be nested</p>
+                                <p>-    Function arguments can have default values;</p>
+                                <p>-    Function has Rest parameters; which allows us to represent an indefinite number of arguments as an array (…others)</p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Function Expression </h4>
+                                <p>-    No function name</p>
+                                <p>-    Enclosed in a parenthesis</p>
+                                <p>-    Can be used as a Immendiately Invoked Function Expression(IIFE)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(28)">Anonymous Function Syntax</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p>-    Are function expressions that are not hoisted onto the beginning of the scope.</p>
+                                <p>-    Cannot be used before they appear in the code</p>
+                                <p>-    Fat Arrow Syntax: “=>”</p>
+                                <ul>
+                                    <li>Has a shorter syntax compared to function expressions and lexically binds the this value</li>
+                                    <li>Are always anonymous</li>
+                                    <li>Note: the this keyword – is a reference to the current object </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic[insertnumberhere]">
+                <h2 class="topictitle" onclick="toggleTopic()"></h2>
+                <div id="midtopic[number]items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet()">html</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4></h4>
+                            </div>
+                            <div class="subdetails">
+                                <h4></h4>
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
