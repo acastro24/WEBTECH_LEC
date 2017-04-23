@@ -726,14 +726,12 @@
                                     – run time environment
                                 </p>
                                 <p>Examples: </p>
-                                <p class="subchild">
                                     <ul>
                                         <li>window.navigator.vendor<p class="subchild2">“Google Inc”</p>
                                         </li>
                                         <li>window.navigator.appName<p class="subchild2">“Netscape”</p></li>
                                         <li>window.screen.width<p class="subchild2">1364</p></li>
                                     </ul>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -892,25 +890,138 @@
                     </div>
                 </div>
             </div>
-            <div id="topic[insertnumberhere]">
-                <h2 class="topictitle" onclick="toggleTopic()"></h2>
-                <div id="midtopic[number]items">
+            <div id="topic11">
+                <h2 class="topictitle" onclick="toggleTopic(11)">Arrays</h2>
+                <div id="midtopic11items">
                     <div class="item">
-                        <h3 class="itemtitle" onclick="toggleDet()">html</h3>
+                        <h3 class="itemtitle" onclick="toggleDet(29)">2 ways of using arrays</h3>
                         <div class="itemdetails">
                             <div class="subdetails">
-                                <h4></h4>
+                                <h4>a.  Using array as objects</h4>
+                                <ul>
+                                    <li>Arrays in javascript is considered to be a list objects that has proper indexes in order to access each individual value in the list. </li>
+                                    <li>Array’s length nor types of elements is not fixed and it can change anytime in the run-time duration.</li>
+                                    <li>Example:
+                                        <ul>
+                                            <li>var students = [“Student1”,”Student2”,”Student3”,”Student4”];</li>
+                                            <li>console.log(students[0]);</li>
+                                            <li>&#62; Student1</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="subdetails">
-                                <h4></h4>
-                                <p></p>
-                                <p></p>
+                                <h4>b.  Using array as literals</h4>
+                                <ul>
+                                    <li>Arrays can also be a treated as a key and value relationship. </li>
+                                    <li>This means that you can call that specific string value if you don’t know the index of the value in the array list. </li>
+                                    <li>Example: 
+                                        <ul>
+                                            <li>var students = [“Student1”:”You”,”Student2”:”me”,”Student3”:”Male”,”Student4”:”Female”];</li>
+                                            <li>console.log(students[‘Student1’]);</li>
+                                            <li>&#62;You</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(30)">Array Destructuring </h3>
+                        <div class="itemdetails">
+                            <p>
+                                – is an expression that lets you assign variables to each of the element in the array and therefore making it possible to call them one by 1 but not calling the array itself.
+                            </p>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>var students = [“Student1”,”Student2”,”Student3”,”Student4”];</li>
+                                <li>var [a,b,c,d] = students;</li>
+                                <li>console.log(a); //Student1</li>
+                                <li>console.log(b); //Student2</li>
+                                <li>console.log(c); //Student3</li>
                             </ul>
+                            <div class="extranote">
+                                <p><span class="noot">Note: </span>Array indices can be non-contiguous – array values can be non-contiguous after it has been declared if you call the index where you skip, the expression will just return Undefined.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(31)">html</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>a.) Mutator Methods: This method modify the array</h4>
+                                <ul>
+                                    <li>Array.prototype.copyWithin()</li>
+                                    <li>Array.prototype.fill()</li>
+                                    <li>Array.prototype.pop()</li>
+                                    <li>Array.prototype.push()</li>
+                                    <li>Array.prototype.reverse()</li>
+                                    <li>Array.prototype.shift()</li>
+                                    <li>Array.prototype.sort()</li>
+                                    <li>Array.prototype.splice()</li>
+                                    <li>Array.prototype.unshift()</li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>b.) Accessor Methods: This method do not modify the array and return some representation of the array</h4>
+                                <ul>
+                                    <li>Array.prototype.concat()</li>
+                                    <li>Array.prototype.includes()</li>
+                                    <li>Array.prototype.indexOf()</li>
+                                    <li>Array.prototype.join()</li>
+                                    <li>Array.prototype.lastIndexOf()</li>
+                                    <li>Array.prototype.slice()</li>
+                                    <li>Array.prototype.toSource()</li>
+                                    <li>Array.prototype.toString()</li>
+                                    <li>Array.prototype.toLocalString()</li>
+                                </ul>
+                            </div>
+                            <div class="subdetails">
+                                <h4>c.) Iteration Methods: This method takes the length of the array and any element added beyond this length from within the callback is not visited.</h4>
+                                <ul>
+                                    <li>Array.prototype.entries()</li>
+                                    <li>Array.prototype.every()</li>
+                                    <li>Array.prototype.filter()</li>
+                                    <li>Array.prototype.find()</li>
+                                    <li>Array.prototype.findIndex()</li>
+                                    <li>Array.prototype.forEach()</li>
+                                    <li>Array.prototype.keys()</li>
+                                    <li>Array.prototype.map()</li>
+                                    <li>Array.prototype.reduce()</li>
+                                    <li>Array.prototype.reduceRight()</li>
+                                    <li>Array.prototype.some()</li>
+                                    <li>Array.prototype.values()</li>
+                                    <li>Array.prototype[@@iterator]()</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic12">
+                <h2 class="topictitle" onclick="toggleTopic(12)">Objects</h2>
+                <div id="midtopic12items">
+                    <div class="item">
+                        <p>
+                            -   Are prototype based objects.
+                        </p>
+                        <p>
+                            -   Uses the curly braces ( { } ) in order to denote a list of objects
+                        </p>
+                        <h3 class="itemtitle" onclick="toggleDet(32)">Object Destructuring</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p>
+                                    – is an expression that lets you assign variables to each of the element in the object and therefore making it possible to call them one by 1 but not calling the object itself.
+                                </p>
+                                <ul>
+                                    <li>var students = {“Name”:”John”,”Age”:21,”Gender”:”Male”,”Course”:”BSCS”};</li>
+                                    <li>var {“Name”:a,”Age”:b,”Gender”:c,”Course”:d} = students;</li>
+                                    <li>console.log(a); //”John”</li>
+                                    <li>console.log(b); //21</li>
+                                    <li>console.log(c); //”Male”</li>
+                                    <li>console.log(d); //”BSCS”</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
