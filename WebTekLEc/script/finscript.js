@@ -21,7 +21,7 @@ x.style.display = 'none';
 y.style.display = 'none';
 z.style.display = 'none';
 a.style.display = 'none';
-//b.style.display = 'none';
+b.style.display = 'none';
 //c.style.display = 'none';
 d.style.display = 'none';
 

@@ -266,6 +266,103 @@ A JSP action may contain sub-action.
                     </div>
                 </div>
             </div>
+            <div id="topic5">
+                <h2 class="topictitle" onclick="toggleTopic(5)">PHP</h2>
+                <div id="fintopic5items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(7)">Superglobal Variables</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>$GLOBALS</h4>
+                                <p>
+                                    - An associative array containing references to all variables which are currently defined in the global scope of the script. The variable names are the keys of the array.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_SERVER</h4>
+                                <p>
+                                 - is an array containing information such as headers, paths, and script locations. The entries in this array are created by the web server. There is no guarantee that every web server will provide any of these; servers may omit some, or provide others not listed here.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_GET</h4>
+                                <p>
+                                 - An associative array of variables passed to the current script via the URL parameters.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_POST</h4>
+                                <p>
+                                    - An associative array of variables passed to the current script via the HTTP POST method when using application/x-www-form-urlencoded or multipart/form-data as the HTTP Content-Type in the request.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_FILES</h4>
+                                <p>
+                                 - An associative array of items uploaded to the current script via the HTTP POST method. The structure of this array is outlined in the POST method uploads section.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_COOKIE</h4>
+                                <p>
+                                 - An associative array of variables passed to the current script via HTTP Cookies.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_SESSION</h4>
+                                <p>
+                                 - An associative array containing session variables available to the current script. See the Session functions documentation for more information on how this is used.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_REQUEST</h4>
+                                <p>
+                                 - An associative array that by default contains the contents of $_GET, $_POST and $_COOKIE.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>$_ENV</h4>
+                                <p>
+                                 - An associative array of variables passed to the current script via the environment method.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(8)">PHP Session Functions</h3>
+                        <div class="itemdetails">
+                            <ul>
+                                <li>session_abort — Discard session array changes and finish session</li>
+                                <li>session_cache_expire — Return current cache expire</li>
+                                <li>session_cache_limiter — Get and/or set the current cache limiter</li>
+                                <li>session_commit — Alias of session_write_close</li>
+                                <li>session_create_id — Create new session id</li>
+                                <li>session_decode — Decodes session data from a session encoded string</li>
+                                <li>session_destroy — Destroys all data registered to a session</li>
+                                <li>session_encode — Encodes the current session data as a session encoded string</li>
+                                <li>session_gc — Perform session data garbage collection</li>
+                                <li>session_get_cookie_params — Get the session cookie parameters</li>
+                                <li>session_id — Get and/or set the current session id</li>
+                                <li>session_is_registered — Find out whether a global variable is registered in a session</li>
+                                <li>session_module_name — Get and/or set the current session module</li>
+                                <li>session_name — Get and/or set the current session name</li>
+                                <li>session_regenerate_id — Update the current session id with a newly generated one</li>
+                                <li>session_register_shutdown — Session shutdown function</li>
+                                <li>session_register — Register one or more global variables with the current session</li>
+                                <li>session_reset — Re-initialize session array with original values</li>
+                                <li>session_save_path — Get and/or set the current session save path</li>
+                                <li>session_set_cookie_params — Set the session cookie parameters</li>
+                                <li>session_set_save_handler — Sets user-level session storage functions</li>
+                                <li>session_start — Start new or resume existing session</li>
+                                <li>session_status — Returns the current session status</li>
+                                <li>session_unregister — Unregister a global variable from the current session</li>
+                                <li>session_unset — Free all session variables</li>
+                                <li>session_write_close — Write session data and end session</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="topic[]">
                 <h2 class="topictitle" onclick="toggleTopic()"></h2>
                 <div id="fintopic[number]items">
