@@ -390,6 +390,80 @@ A JSP action may contain sub-action.
                     </div>
                 </div>
             </div>
+            <div id="topic7">
+                <h2 class="topictitle" onclick="toggleTopic(7)">Application T10 Security Risks</h2>
+                <div id="fintopic7items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(10)">OWASPS Top 10(2017)</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <h4>Injection</h4>
+                                <p>
+                                 - Injection flaws, such as SQL, OS, XXE, and LDAP injection occur when untrusted data is sent to and interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Broken Authentication and Session Management</h4>
+                                <p>
+                                 - Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities (temporarily or permanently).
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Cross-Site Scripting (XSS)</h4>
+                                <p>
+                                  - XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user supplied data using a browser API that can create JavaScript. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Broken Access Control</h4>
+                                <p>
+                                 - Restrictions on what authenticated users are allowed to do are not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Security Misconfiguration</h4>
+                                <p>
+                                 - Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure. Additionally, software should be kept up to date.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Sensitive Data Exposure</h4>
+                                <p>
+                                 - Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data deserves extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.
+
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Insufficient Attack Protection</h4>
+                                <p>
+                                 - The majority of applications and APIs lack the basic ability to detect, prevent, and respond to both manual and automated attacks. Attack protection goes far beyond basic input validation and involves automatically detecting, logging, responding, and even blocking exploit attempts. Application owners also need to be able to deploy patches quickly to protect against attacks.
+
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Cross-Site Request Forgery(CSRF)</h4>
+                                <p>
+                                 - A CSRF attack forces a logged-on victim’s browser to send a forged HTTP request, including the victim’s session cookie and any other automatically included authentication information, to a vulnerable web application. Such an attack allows the attacker to force a victim’s browser to generate requests the vulnerable application thinks are legitimate requests from the victim.
+
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Using Components with Known Vulnerabilities</h4>
+                                <p>
+                                 - Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts. 
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Underprotected APIs</h4>
+                                <p>
+                                 - Modern applications often involve rich client applications and APIs, such as JavaScript in the browser and mobile apps, that connect to an API of some kind (SOAP/XML, REST/JSON, RPC, GWT, etc.). These APIs are often unprotected and contain numerous vulnerabilities.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="contianerf">
