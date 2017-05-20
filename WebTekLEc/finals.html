@@ -11,7 +11,7 @@
         <meta name="author" content="Leo Dominique Festejo">
         <meta name="Keywords" content="HTTP, Web Tech, Web Development and Technology, Notes">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <script defer type="text/javascript" src="script/script.js"></script>
+        <script defer type="text/javascript" src="script/finscript.js"></script>
     </head>
     <body>
         <header>
@@ -28,41 +28,261 @@
         </header>
         <div id="mainbody">
             <div id="topic0">
-                <h2 class="topictitle" onclick="toggleTopic0()">No topics yet (;~~~;)</h2>
-                <div id="topic0items">
+                <h2 class="topictitle" onclick="toggleTopic(0)">JAVA API</h2>
+                <div id="fintopic0items">
                     <div class="item">
-                        <h3 class="itemtitle" onclick="toggleDet(0)">html</h3>
+                        <h3 class="itemtitle" onclick="toggleDet(0)">Java Editions</h3>
                         <div class="itemdetails">
                             <div class="subdetails">
-                                <h4></h4>
+                                <h4>Java SE – Java Standard Edition</h4>
+                                <p>
+                                    -   Used for development and deployment of portable code for desktop and server environments.</p>
+                                <p>-   Formerly known as Java 2 Platform, Standard Edition or J2SE.</p>
+                                <p>-   Uses object-oriented Java programming language.
+                                </p>
+
                             </div>
                             <div class="subdetails">
-                                <h4></h4>
-                                <p></p>
-                                <p></p>
+                                <h4>JAVA EE</h4>
+                                <p>
+                                   -    Java Enterprise Edition 
+                                </p>
+                                <p>
+                                    -   Built on top of JAVA SE
+                                </p>
+                                <p>
+                                    -   Provides an API and runtime environment for developing and running large-scale, scalable, reliable and secure network applications
+                                </p>
                             </div>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            <div class="subdetails">
+                                <h4>JAVA ME</h4>
+                                <p>
+                                   -    Java Platform, Micro Edition
+                                </p>
+                                <p>
+                                   -    Designed for embedded systems such as mobile devices.
+                                </p>
+                                <p>
+                                    -   Devices targeted range from industrial controls to mobile phones especially feature phones.
+                                </p>
+                                <p>
+                                    -   Formerly known as Java 2 Platform, Micro Edition (J2ME)
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="topic[insertnumberhere]">
+            <div id="topic1">
+                <h2 class="topictitle" onclick="toggleTopic(1)">JAVA Servlet</h2>
+                <div id="fintopic1items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(1)">Sevlets</h3>
+                        <div class="itemdetails">
+                            <p>
+                                -   Server side programs running inside a web server handling clients’ request and returns dynamic response based on user’s output retried from either database or other applications for each request.
+                            </p>
+                            <p>
+                                -   runs on the http protocol
+                            </p>
+                            <p>
+                                -   foundation of the Java server-side technology, JSP, JSF, Struts, Spring, Hibernate and others.
+                            </p>
+                            <div class="subdetails">
+                                <h4>Java Servlet Versions</h4>
+                                <pre>
+                                    -   Java Servlet has these versions: [TODO features and what is new]
+                                        o   J2EE 1.2 (December 12, 1999) (Java Servlet 2.2, JSP 1.1, EJB 1.1, JDBC 2.0)
+                                        o   J2EE 1.3 (September 24, 2001) (Java Servlet 2.3, JSP 1.2, EJB 2.0, JDBC 2.1)
+                                        o   J2EE 1.4 (November 11, 2003) (Java Servlet 2.4, JSP 2.0, EJB 2.1, JDBC 3.0)
+                                        o   Java EE 5 (May 11, 2006) (Java Servlet 2.5, JSP 2.1, JSTL 1.2, JSF 1.2, EJB 3.0, JDBC 3.0)
+                                        o   Java EE 6 (December 10, 2009) (Java Servlet 3.0, JSP 2.2/EL 2.2, JSTL 1.2, JSF 2.0, EJB 3.1, JDBC 4.0)
+                                        o   Java EE 7: expected in end of 2012.
+                                </pre>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Server-Side Technologies</h4>
+                                <p>
+                                    There are many (competing) server-side technologies available: Java-based (servlet, JSP, JSF, Struts, Spring, Hibernate), ASP, PHP, CGI Script, and many others.
+                                </p>
+                                <p>
+                                    Java servlet is the foundation of the Java server-side technology, JSP (JavaServer Pages), JSF (JavaServer Faces), Struts, Spring, Hibernate, and others, are extensions of the servlet technology.
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Pre-requisites</h4>
+                                <p>
+                                   HTML, Java Programming Language, HTTP and Apache Tomcat Server, SQL and MySQL Database System, and many others. 
+                                </p>
+                            </div>
+                            <div class="subdetails">
+                                <h4>Apache Tomcat Server</h4>
+                                <p>
+                                   Servlets are server-side programs run inside a Java-capable HTTP server. Apache Tomcat Server (@ http://tomcat.apache.org) is the official Reference Implementation (RI) for Java servlet and JSP, provided free by open-source foundation Apache (@ http://www.apache.org).
+You need to install Tomcat to try out Java servlets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic2">
+                <h2 class="topictitle" onclick="toggleTopic(2)">JAVA Servlet Notes</h2>
+                <div id="fintopic2items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(2)">Notes</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                                <p>
+                                    - Servlets are Java programs that runs inside a Java-capable HTTP server. A user can invoke a servlet by issuing a specific URL from the browser (HTTP client). 
+                                </p>
+                                <p>
+                                    - A servlet shall be kept inside a Java package (instead of the default no-name package) for proper deployment.
+                                </p>
+                                <p>
+                                    - We don't write a servlet from scratch. Instead, we create a servlet by sub-classing javax.servlet.http.HttpServlet 
+                                </p>
+                                <p>
+                                    - A servlet is about the server's response to a request URL to the client. The client issues an HTTP request,then the server sends a request message to the servlet for processing. The servlet returns a response message to the client.
+                                </p>
+                                <p>
+                                    - An HTTP request could use either GET or POST request methods, which will be processed by the servlet's doGet() or doPost() method, respectively.
+                                </p>
+                                <p>
+                                    - The HttpServletRequest object can be used to retrieve incoming HTTP request headers and form data. The HttpServletResponse object can be used to set the HTTP response headers (e.g., content-type) and the response message body.
+                                </p>
+                                <p>
+                                    - A web user invokes a servlet, which is kept in the web server, by issuing a specific URL from the browser.
+                                </p>
+                                <p>
+                                    - To run the servlet, first start the Tomcat server.
+                                </p>
+                                <p>
+                                    - HTML provides a form tag, which can be used to build a user input form containing elements such as text fields, password field, radio buttons, pull-down menu, checkboxes, text area, hidden field, submit and reset buttons. This allows web users to interact with the web server by submit data.
+                                </p>
+                                <p>
+                                    - The form that we have written send its data to a server-side program having relative URL of "echo" (as specified in the action="url" attribute of the form start-tag).
+                                </p>
+                                <p>
+                                    - Two request methods, GET and POST, are available for submitting form data, to be specified in the form' tag's attribute "method=GET|POST". GET and POST performs the same basic function. That is, gather the name-value pairs of the selected input elements, URL-encode, and pack them into a query string. However, in a GET request, the query string is appended behind the URL, separated by a '?'. Whereas in a POST request, the query string is kept in the request body (and not shown in the URL). The length of query string in a GET request is limited by the maximum length of URL permitted, whereas it is unlimited in a POST request.
+                                </p>
+                                <p>
+                                   - HTTP is a request-response protocol. The client sends a request message to the server. The server, in turn, returns a response message. The request and response messages consists of two parts: header (information about the message) and body (contents). Header provides information about the messages. The data in header is organized in name-value pairs. Read "HTTP Request and Response Messages" for the format, syntax of request and response messages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic3">
+                <h2 class="topictitle" onclick="toggleTopic(3)">JAVA Servlet Sessions</h2>
+                <div id="fintopic3items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(3)">Session</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                            <h4>HttpSession Object</h4>
+                                <p>
+                                    - A servlet provides HttpSession Interface which provides a way to identify a user across more than one page request or visit to a Web site and to store information about that user.
+                                </p>
+                                <p>
+                                    - The servlet container uses this interface to create a session between an HTTP client and an HTTP server. The session persists for a specified time period, across more than one connection or page request from the user.
+                                </p>
+                                <p>
+                                    - You would get HttpSession object by calling the public method getSession() of HttpServletRequest.
+                                </p>
+                                <p>
+                                   - You need to call request.getSession() before you send any document content to the client.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(4)">HttpSession methods</h3>
+                        <div class="itemdetails">
+                            <div class="subdetails">
+                            <h4>Methods</h4>
+                                <ul>
+                                <li>public Object getAttribute(String name)</li>
+                                <li>public Enumeration getAttributeNames()</li>
+                                <li>public long getCreationTime()</li>
+                                <li>public String getId()</li>
+                                <li>public String getId()</li>
+                                <li>public int getMaxInactiveInterval()</li>
+                                <li>public void invalidate()</li>
+                                <li>public boolean isNew()</li>
+                                <li>public void removeAttribute(String name)</li>
+                                <li>public void setAttribute(String name, Object value)</li>
+                                <li>public void setMaxInactiveInterval(int interval)</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic4">
+                <h2 class="topictitle" onclick="toggleTopic(4)">JSP</h2>
+                <div id="fintopic4items">
+                    <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(5)">JSTL</h3>
+                        <div class="itemdetails">
+                            - Java Standard Library Tags
+                            <div class="subdetails">
+                                <ul>
+                                    <li>JSP Comment &#60;%-- comments --%&#62;</li>
+                                    <li>JSP Expression &#60;%= JavaExpression %&#62;</li>
+                                    <li>JSP Scriptlet &#60;% Java Statements %&#62;</li>
+                                    <li>JSP Declaration &#60;%! Java Statements %&#62;</li>
+                                    <li>JSP Directive &#60;%@ ... %&#62;</li>
+                                    <li>JSP Page Directive &#60;%@page ... %&#62;</li>
+                                    <li>JSP Include Directive &#60;%@include ... %&#62;</li>
+                                    <li>JSP Taglib Directive &#60;%@taglib ... %&#62;</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                        <h3 class="itemtitle" onclick="toggleDet(6)">JSP Standard Actions</h3>
+                        <div class="itemdetails">
+                         <p>
+                             -The purpose of JSP actions is to specify activities to be performed when a page is processed. In contrast, JSP scripting elements such as directives (&#60;%@ ... %&#62;) are processed when translating the page, which produces static contents.
+A JSP action may contain sub-action.
+                         </p>
+                            <div class="subdetails">
+
+                                    <h4>&#60;jsp:forward&#62;</h4>
+                                <p>
+                                    - To terminate execution of the current page and forward the request to another page. 
+                                </p>
+                            </div>
+                            <div class="subdetails">
+
+                                    <h4>&#60;jsp:include&#62;</h4>
+                                <p>
+                                    - To execute another page and append its output to the current page. That is, it places the generated HTML code into the current JSP page. This is different from the JSP include directive &#60;%@ include ... %&#62;, which insert unprocessed content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic[]">
                 <h2 class="topictitle" onclick="toggleTopic()"></h2>
                 <div id="fintopic[number]items">
                     <div class="item">
                         <h3 class="itemtitle" onclick="toggleDet()">html</h3>
                         <div class="itemdetails">
                             <div class="subdetails">
-                                <h4></h4>
+                                <h4>Server-Side Technologies</h4>
+                                <p>
+                                </p>
+                                <p>
+                                </p>
                             </div>
                             <div class="subdetails">
-                                <h4></h4>
-                                <p></p>
-                                <p></p>
+                                <h4>Pre-requisites</h4>
+                                <p>
+                                </p>
                             </div>
                             <ul>
                                 <li></li>
